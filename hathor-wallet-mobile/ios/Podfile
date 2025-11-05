@@ -1,0 +1,90 @@
+# React-Native-Permissions helper function
+def node_require(script)
+  # Resolve script with node to allow for hoisting
+  require Pod::Executable.execute_command('node', ['-p',
+    "require.resolve(
+      '#{script}',
+      {paths: [process.argv[1]]},
+    )", __dir__]).strip
+end
+
+# Use the helper to require both react-native's and this package's scripts:
+node_require('react-native/scripts/react_native_pods.rb')
+node_require('react-native-permissions/scripts/setup.rb')
+
+min_ios_version_supported = '15.1'
+platform :ios, min_ios_version_supported
+prepare_react_native_project!
+
+# Permissions needed from react-native-permissions
+setup_permissions([
+    # 'AppTrackingTransparency',
+    # 'Bluetooth',
+    # 'Calendars',
+    # 'CalendarsWriteOnly',
+    'Camera',
+    # 'Contacts',
+    'FaceID',
+    # 'LocationAccuracy',
+    # 'LocationAlways',
+    # 'LocationWhenInUse',
+    # 'MediaLibrary',
+    # 'Microphone',
+    # 'Motion',
+    'Notifications',
+    # 'PhotoLibrary',
+    # 'PhotoLibraryAddOnly',
+    # 'Reminders',
+    # 'Siri',
+    # 'SpeechRecognition',
+    # 'StoreKit',
+])
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
+target 'HathorMobile' do
+  # Don't change the order of any declaration!
+  config = use_native_modules!
+
+  # Firebase requires the usage of frameworks linked statically.
+  # This means the firebase code will be compiled into the app binary.
+  # A reason for this is to avoid compatibility issues with a 3rd paty dependency.
+  # A consequence of it is a better performance.
+  #
+  # This needs to be executed before use_react_native!(),
+  # @see https://github.com/facebook/react-native/issues/36120#issuecomment-1425892304
+  use_frameworks! :linkage => :static
+
+  # Instruct the build script to use the Firebase as an static framework.
+  $RNFirebaseAsStaticFramework = true
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+
+    # We can't use Hermes with SES (https://github.com/facebook/hermes/issues/957)
+    :hermes_enabled => true,
+
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  # Firebase required dependency.
+  # It contains native code to integrate with Google Services.
+  # When the modular header feature is enabled, only used modules
+  # are compiled within the app binary.
+  pod 'GoogleUtilities', :modular_headers => true
+
+  post_install do |installer|
+    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+  end
+end

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(mv:*)",
+      "Bash(rg:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx webpack:*)",
+      "Bash(npm run build:webpack:*)",
+      "Bash(npm ls:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(npm run lint:*)",
+      "Bash(npm info:*)",
+      "Bash(npx eslint:*)",
+      "Bash(gh pr view:*)",
+      "WebSearch",
+      "Bash(./gradlew:*)",
+      "WebFetch(domain:www.creolestudios.com)",
+      "Bash(cat:*)",
+      "WebFetch(domain:www.npmjs.com)"
+    ],
+    "deny": []
+  }
+}

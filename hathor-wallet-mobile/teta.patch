@@ -1,0 +1,110 @@
+diff --git a/src/components/BackdropModal.js b/src/components/BackdropModal.js
+index 49077422..6cdb5a79 100644
+--- a/src/components/BackdropModal.js
++++ b/src/components/BackdropModal.js
+@@ -264,10 +264,13 @@ const BackdropModal = ({
+ 
+   return (
+     <Modal
++      key={`backdrop-modal-${visible}`} // Force remount on visibility change to prevent ghost modals
+       transparent
+       visible={visible}
+       animationType='none' // We handle animations manually
+       onRequestClose={onDismiss}
++      hardwareAccelerated // Use hardware acceleration for better performance
++      statusBarTranslucent // Prevent status bar issues
+       {...modalProps}
+     >
+       <Animated.View
+@@ -287,13 +290,15 @@ const BackdropModal = ({
+             </TouchableWithoutFeedback>
+           )}
+ 
+-          {/* Content area */}
+-          <Animated.View
+-            style={getContentStyle()}
+-            {...(enableSwipeToDismiss ? panResponder.panHandlers : {})}
+-          >
+-            {showChildren && children}
+-          </Animated.View>
++          {/* Content area - only show when visible AND children ready */}
++          {visible && showChildren && (
++            <Animated.View
++              style={getContentStyle()}
++              {...(enableSwipeToDismiss ? panResponder.panHandlers : {})}
++            >
++              {children}
++            </Animated.View>
++          )}
+         </View>
+       </Animated.View>
+     </Modal>
+diff --git a/src/components/Reown/ConnectModal.js b/src/components/Reown/ConnectModal.js
+index 3660139a..0b1151f5 100644
+--- a/src/components/Reown/ConnectModal.js
++++ b/src/components/Reown/ConnectModal.js
+@@ -5,7 +5,7 @@
+  * LICENSE file in the root directory of this source tree.
+  */
+ 
+-import React from 'react';
++import React, { useEffect } from 'react';
+ import { useDispatch } from 'react-redux';
+ import { t } from 'ttag';
+ import { StyleSheet, Text } from 'react-native';
+@@ -62,13 +62,15 @@ const styles = StyleSheet.create({
+   },
+ });
+ 
+-export default ({
+-  onAcceptAction,
+-  onRejectAction,
+-  onDismiss,
+-  data,
+-}) => {
++export default ({ onAcceptAction, onRejectAction, onDismiss, data }) => {
++  useEffect(() => {
++    console.log('MOUNTING CONNECT MODAL!!!!!');
++    return () => {
++      console.log('UNMOUNTING CONNECT MODAL!!!!!!');
++    };
++  }, []);
+   const dispatch = useDispatch();
++  console.log('ConnectModal RENDER - show:', 'data:', data);
+ 
+   const onAccept = () => {
+     onDismiss();
+@@ -83,11 +85,11 @@ export default ({
+   return (
+     <ApproveRejectModal
+       headerText={t`Connect to this dApp?`}
+-      body={(
++      body={
+         <Text style={styles.modalText}>
+-          { t`By clicking connect, you allow this dapp to receive your wallet's public address. Please validate the URL and the dApp name, this is an important security step to protect your data from potential phishing risks.` }
++          {t`By clicking connect, you allow this dapp to receive your wallet's public address. Please validate the URL and the dApp name, this is an important security step to protect your data from potential phishing risks.`}
+         </Text>
+-      )}
++      }
+       onAccept={onAccept}
+       onReject={onReject}
+       data={data}
+diff --git a/src/components/Reown/ReownModal.js b/src/components/Reown/ReownModal.js
+index ea62124b..7afca11f 100644
+--- a/src/components/Reown/ReownModal.js
++++ b/src/components/Reown/ReownModal.js
+@@ -47,8 +47,13 @@ export default () => {
+ 
+     // Always render the component but control visibility via show prop
+     // This ensures proper cleanup and prevents flickering
++    // Key prop forces remount when type or show changes to prevent ghost modals
+     return (
+-      <Component {...reownModal} onDismiss={onDismiss} />
++      <Component
++        key={`reown-modal-${type}-${reownModal.show}`}
++        {...reownModal}
++        onDismiss={onDismiss}
++      />
+     );
+   };
+ 

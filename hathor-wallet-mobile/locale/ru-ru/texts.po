@@ -1,0 +1,2072 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#.  This should never happen!
+#: src/models.js:85
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: src/models.js:88
+#, javascript-format
+msgid "Received ${ symbol }"
+msgstr "Получено ${ symbol }"
+
+#: src/models.js:90
+msgid "Sent ${ symbol }"
+msgstr "Отправлено ${ symbol }"
+
+#: src/models.js:92
+#, javascript-format
+msgid "You sent ${ symbol } to yourself"
+msgstr "Вы отправили себе ${ symbol }"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:102
+msgid "[Today •] HH:mm"
+msgstr "[Сегодня •] HH:mm"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:103
+msgid "[Tomorrow •] HH:mm"
+msgstr "[Завтра •] HH:mm"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:104
+msgid "dddd [•] HH:mm"
+msgstr "dddd [•] HH:mm"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:105
+msgid "[Yesterday •] HH:mm"
+msgstr "[Вчера •] HH:mm"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:106
+msgid "[Last] dddd [•] HH:mm"
+msgstr "[Последний] dddd [•] HH:mm"
+
+#.  See https://momentjs.com/docs/#/displaying/calendar-time/
+#: src/models.js:107 src/utils.js:627
+msgid "DD MMM YYYY [•] HH:mm"
+msgstr "DD MMM YYYY [•] HH:mm"
+
+#: src/utils.js:271
+msgid "Invalid address"
+msgstr "Неправильный адрес"
+
+#. *
+#.          * @example
+#.          * You have received 10 T2, 5 T1 and 2 other token on a new transaction.
+#.          
+#: src/workers/pushNotificationHandler.js:92
+#, javascript-format
+msgid ""
+"You have received ${ firstToken }, ${ secondToken } and ${ otherCount } "
+"other token on a new transaction."
+msgid_plural ""
+"You have received ${ firstToken }, ${ secondToken } and ${ otherCount } "
+"other tokens on a new transaction."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. *
+#.          * @example
+#.          * You have received 10 T2 and 5 T1 on a new transaction.
+#.          
+#: src/workers/pushNotificationHandler.js:105
+#, javascript-format
+msgid ""
+"You have received ${ _firstToken } and ${ _secondToken } on a new "
+"transaction."
+msgstr ""
+
+#. *
+#.          * @example
+#.          * You have received 10 T2 on a new transaction.
+#.          
+#: src/workers/pushNotificationHandler.js:113
+msgid "You have received ${ _firstToken2 } on a new transaction."
+msgstr ""
+
+#: src/workers/pushNotificationHandler.js:116
+msgid "There is a new transaction in your wallet."
+msgstr ""
+
+#: src/workers/pushNotificationHandler.js:118
+msgid "New transaction received"
+msgstr ""
+
+#: src/screens/About.js:83
+msgid "ABOUT"
+msgstr "О НАС"
+
+#: src/screens/About.js:95
+msgid "This app is developed by Hathor Labs and is distributed for free."
+msgstr "Это приложение разработано Hathor Labs и распространяется бесплатно."
+
+#: src/screens/About.js:99 src/screens/InitWallet.js:65
+msgid "This wallet is connected to the **mainnet**."
+msgstr "Этот кошелек подключен к **mainnet**."
+
+#: src/screens/About.js:102 src/screens/InitWallet.js:68
+msgid ""
+"A mobile wallet is not the safest place to store your tokens.\n"
+"So, we advise you to keep only a small amount of tokens here, such as pocket "
+"money."
+msgstr ""
+"Мобильный кошелек - не самый безопасный способ для хранения ваших токенов.\n"
+"Поэтому мы не советуем хранить на нем большие суммы."
+
+#: src/screens/About.js:107
+msgid ""
+"For further information, check out the |link1:Terms of Service| and |"
+"link2:Privacy Policy|, or our website |link3:https://hathor.network/|."
+msgstr ""
+
+#: src/screens/BackupWords.js:184
+msgid "To make sure you saved,"
+msgstr "Чтобы убедиться в том, что вы сохранили,"
+
+#: src/screens/BackupWords.js:186
+msgid "Please select the word that corresponds to the number below:"
+msgstr "Пожалуйста, выберите слово, которое соответствует номеру ниже:"
+
+#: src/screens/BackupWords.js:200
+msgid "Words saved correctly"
+msgstr "Seed-фраза введена верно"
+
+#: src/screens/BackupWords.js:216
+msgid "Wrong word."
+msgstr ""
+
+#: src/screens/BackupWords.js:217
+msgid "Please double check the words you saved and start the process again."
+msgstr ""
+
+#: src/screens/ChangePin.js:113
+msgid "Incorrect PIN code."
+msgstr "Неверный PIN-код."
+
+#: src/screens/ChangePin.js:149
+msgid "PIN codes don't match."
+msgstr "PIN-коды не совпадают."
+
+#.  Should never get here because we've done all the validations before
+#: src/screens/ChangePin.js:178
+msgid "Error while changing PIN"
+msgstr "Ошибка при смене PIN-кода"
+
+#: src/screens/ChangePin.js:185
+msgid "Please enter your **current PIN**"
+msgstr "Пожалуйста, введите ваш **текущий PIN-код**"
+
+#: src/screens/ChangePin.js:198
+msgid "Please enter your **new PIN**"
+msgstr "Пожалуйста, введите ваш новый **PIN-код**"
+
+#: src/screens/ChangePin.js:211
+msgid "Please enter your **new PIN** again"
+msgstr "Пожалуйста, введите ваш **новый PIN-код** снова"
+
+#: src/screens/ChangePin.js:226
+msgid "New PIN recorded"
+msgstr "Новый PIN-код сохранен"
+
+#: src/screens/ChangePin.js:236
+msgid "CHANGE PIN"
+msgstr "ИЗМЕНИТЬ PIN-код"
+
+#: src/screens/ChoosePinScreen.js:140
+msgid "Enter your new PIN code"
+msgstr "Введите новый PIN-код"
+
+#: src/screens/ChoosePinScreen.js:152
+msgid "Enter your new PIN code again"
+msgstr "Введите новый PIN-код еще раз"
+
+#: src/screens/ChoosePinScreen.js:74
+msgid "Create a new PIN code,"
+msgstr "Создать новый PIN-код,"
+
+#: src/screens/ChoosePinScreen.js:77
+msgid "To confirm the PIN,"
+msgstr "Для подтверждения PIN-кода,"
+
+#: src/screens/ChoosePinScreen.js:166
+msgid "PIN codes don't match. Try again."
+msgstr "PIN-коды не совпадают. Попробуйте еще раз."
+
+#: src/screens/ChoosePinScreen.js:189
+msgid "Start the Wallet"
+msgstr "Запустить кошелек"
+
+#: src/screens/CreateTokenAmount.js:88 src/screens/CreateTokenAmount.js:100
+#: src/screens/SendAmountInput.js:92
+msgid "Invalid amount"
+msgstr ""
+
+#: src/screens/CreateTokenAmount.js:150 src/screens/CreateTokenConfirm.js:154
+#: src/screens/CreateTokenDepositNotice.js:42 src/screens/CreateTokenName.js:43
+#: src/screens/CreateTokenSymbol.js:62
+msgid "CREATE TOKEN"
+msgstr "СОЗДАТЬ ТОКЕН"
+
+#: src/screens/CreateTokenAmount.js:158
+#, javascript-format
+msgid "Amount of ${ name } (${ symbol })"
+msgstr ""
+
+#: src/screens/CreateTokenAmount.js:176
+msgid "Deposit:"
+msgstr "Депозит:"
+
+#: src/screens/CreateTokenAmount.js:180
+#, javascript-format
+msgid "You have ${ amountAvailableText } ${ nativeSymbol } available"
+msgstr ""
+
+#: src/screens/CreateTokenAmount.js:185 src/screens/CreateTokenName.js:64
+#: src/screens/CreateTokenSymbol.js:84 src/screens/InitWallet.js:229
+#: src/screens/InitWallet.js:382 src/screens/SendAddressInput.js:66
+#: src/screens/SendAmountInput.js:168
+msgid "Next"
+msgstr "Далее"
+
+#: src/screens/CreateTokenConfirm.js:94
+msgid "Creating token"
+msgstr "Создать токен"
+
+#: src/screens/CreateTokenConfirm.js:109
+msgid "Enter your 6-digit pin to create your token"
+msgstr "Введите 6-значный PIN-код для создания токена"
+
+#: src/screens/CreateTokenConfirm.js:110
+msgid "Authorize token creation"
+msgstr "Авторизовать создание токена"
+
+#: src/screens/CreateTokenConfirm.js:112 src/screens/SendConfirmScreen.js:85
+msgid "Building transaction"
+msgstr ""
+
+#: src/screens/CreateTokenConfirm.js:171
+#, javascript-format
+msgid "**${ name }** created successfully"
+msgstr ""
+
+#: src/screens/CreateTokenConfirm.js:184
+msgid "Amount of ${ name }"
+msgstr ""
+
+#: src/screens/CreateTokenConfirm.js:193
+msgid "Token name"
+msgstr "Имя токена"
+
+#: src/screens/CreateTokenConfirm.js:199 src/screens/CreateTokenSymbol.js:69
+msgid "Token symbol"
+msgstr "Символ токена"
+
+#: src/screens/CreateTokenConfirm.js:205
+msgid "Deposit"
+msgstr "Депозит"
+
+#: src/screens/CreateTokenConfirm.js:214
+msgid "Create token"
+msgstr "Создать токен"
+
+#: src/screens/CreateTokenDepositNotice.js:49
+#, javascript-format
+msgid ""
+"When creating new tokens, a |fn:deposit of ${ depositPercentage }%| in HTR "
+"is required - e.g. if you create 1000 NewCoins, 10 HTR are needed as deposit."
+msgstr ""
+"При создании новых токенов |fn:депозит составит ${ depositPercentage }%| в "
+"HTR - например, если вы захотите создать 1000 NewCoins, вам понадобится 10 "
+"HTR."
+
+#: src/screens/CreateTokenDepositNotice.js:55
+msgid ""
+"If these tokens are later melted, the HTR deposit will be returned. Read "
+"more about it |link:here|."
+msgstr ""
+"Если эти токены будут уничтожены в будущем, депозит HTR будет возвращен. "
+"Подробнее об этом |link:здесь|."
+
+#: src/screens/CreateTokenDepositNotice.js:63
+#: src/screens/NetworkSettings/NetworkSettingsDisclaimerScreen.js:76
+msgid "I understand"
+msgstr "Я понимаю"
+
+#: src/screens/CreateTokenDetail.js:42 src/screens/TokenDetail.js:48
+msgid "TOKEN DETAILS"
+msgstr "ДЕТАЛИ ТОКЕНА"
+
+#. *
+#.    * name {string} token name
+#.    
+#: src/screens/CreateTokenName.js:26
+msgid "0/30 characters"
+msgstr "0/30 символов"
+
+#: src/screens/CreateTokenName.js:32
+#, javascript-format
+msgid "${ text.length }/30 characters"
+msgstr "${ text.length }/30 символов"
+
+#: src/screens/CreateTokenName.js:50
+msgid "Token Name"
+msgstr "Имя Токена"
+
+#: src/screens/CreateTokenName.js:59
+msgid "Token name should be the full name of the new token you are creating"
+msgstr "Здесь должно быть указано полное имя создаваемого вами токена"
+
+#: src/screens/CreateTokenName.js:60
+msgid "E.g. MyToken or My Token"
+msgstr "Например, MyToken или My Token"
+
+#: src/screens/CreateTokenSymbol.js:72
+msgid "Between 2 and 5 characters"
+msgstr "От 2 до 5 символов"
+
+#: src/screens/CreateTokenSymbol.js:79
+msgid "The symbol is a smaller version of the token name"
+msgstr "Символ является сокращенной версией имени токена"
+
+#: src/screens/CreateTokenSymbol.js:80
+msgid "E.g. HTR"
+msgstr "Например, HTR"
+
+#.  Only show the toggle button when Nano Contract is enabled to the wallet
+#: src/screens/Dashboard.js:139 src/screens/Dashboard.js:197
+msgid "Tokens"
+msgstr "ТокенЫ"
+
+#.  Only show the toggle button when Nano Contract is enabled to the wallet
+#: src/components/NanoContract/NanoContractsList.js:75
+#: src/screens/Dashboard.js:140
+msgid "Nano Contracts"
+msgstr ""
+
+#: src/screens/InitWallet.js:62
+msgid "Welcome to Hathor Wallet!"
+msgstr "Добро пожаловать в Hathor Wallet!"
+
+#: src/screens/InitWallet.js:73
+msgid ""
+"For further information, check out our website |link:https://"
+"hathor.network/|."
+msgstr ""
+"Для получения дополнительной информации, посетите наш веб-сайт |link:https://"
+"hathor.network/|."
+
+#: src/screens/InitWallet.js:86
+msgid ""
+"I agree with the |link1:Terms of Service| and |link2:Privacy Policy| and "
+"understand the risks of using a mobile wallet"
+msgstr ""
+
+#: src/screens/InitWallet.js:98
+msgid "Start"
+msgstr "Начать"
+
+#: src/screens/InitWallet.js:115
+msgid "To start,"
+msgstr "Начать,"
+
+#: src/screens/InitWallet.js:117
+msgid "You need to **initialize your wallet**."
+msgstr "Вам нужно **инициализировать свой кошелек**."
+
+#: src/screens/InitWallet.js:120
+msgid ""
+"You can either **start a new wallet** or **import a wallet** that already "
+"exists."
+msgstr ""
+"Вы можете **создать новый кошелек**, либо **импортировать кошелек**, который "
+"уже существует."
+
+#: src/screens/InitWallet.js:123
+msgid "To import a wallet, you will need to provide your seed words."
+msgstr "Чтобы импортировать кошелек, необходимо ввести seed-фразу."
+
+#: src/screens/InitWallet.js:128
+msgid "Import Wallet"
+msgstr "Импортировать Кошелек"
+
+#: src/screens/InitWallet.js:134
+msgid "New Wallet"
+msgstr "Новый Кошелек"
+
+#: src/screens/InitWallet.js:220
+msgid "Your wallet has been created!"
+msgstr "Ваш кошелек создан!"
+
+#: src/screens/InitWallet.js:222
+msgid ""
+"You must **do a backup** and save the words below **in the same order they "
+"appear**."
+msgstr ""
+"Вы должны **сделать резервную копию** и сохранить слова ниже **в том же "
+"порядке, в котором они появились**."
+
+#: src/screens/InitWallet.js:343
+msgid "To import a wallet,"
+msgstr "Чтобы импортировать кошелек,"
+
+#: src/screens/InitWallet.js:345
+#, javascript-format
+msgid ""
+"You need to **write down the ${ this.numberOfWords } seed words** of your "
+"wallet, separated by space."
+msgstr ""
+"Вам нужно **записать ${ this.numberOfWords } seed-фразу** вашего кошелька."
+
+#: src/screens/InitWallet.js:348
+msgid "Words"
+msgstr "Слова"
+
+#: src/screens/InitWallet.js:353
+msgid "Enter your seed words separated by space"
+msgstr "Введите seed-фразу"
+
+#: src/components/NanoContract/NanoContractDetails.js:249
+#: src/components/Reown/CreateTokenRequest.js:227
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:592
+#: src/components/Reown/SendTransactionRequest.js:525
+#: src/screens/LoadHistoryScreen.js:51 src/screens/LoadWalletErrorScreen.js:27
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:168
+#: src/screens/PinScreen.js:283
+msgid "Try again"
+msgstr ""
+
+#: src/screens/LoadHistoryScreen.js:60
+msgid "Loading your transactions"
+msgstr "Загрузка ваших транзакций"
+
+#: src/screens/LoadHistoryScreen.js:63
+#, javascript-format
+msgid "**${ loadedData.transactions } transactions** found"
+msgstr "**${ loadedData.transactions } транзакций** найдено"
+
+#: src/screens/LoadHistoryScreen.js:66
+#, javascript-format
+msgid "**${ loadedData.addresses } addresses** found"
+msgstr "**${ loadedData.addresses } адресов** найдено"
+
+#: src/screens/LoadWalletErrorScreen.js:26
+msgid "There's been an error connecting to the server."
+msgstr ""
+
+#: src/screens/LoadWalletErrorScreen.js:28 src/screens/PinScreen.js:312
+#: src/screens/Settings.js:162
+msgid "Reset wallet"
+msgstr "Сбросить кошелек"
+
+#: src/screens/LoadWalletErrorScreen.js:29
+msgid "Connect to mainnet"
+msgstr ""
+
+#: src/screens/MainScreen.js:127
+msgid "No transactions"
+msgstr "Нет транзакций"
+
+#: src/screens/MainScreen.js:130
+msgid "|share:Share your address| with friends and start exchanging tokens"
+msgstr ""
+"|share:Поделитесь своим адресом| с друзьями и начните обменивать свои токены"
+
+#: src/screens/MainScreen.js:147
+msgid "Loading transactions"
+msgstr "Загрузка ваших транзакций"
+
+#: src/screens/MainScreen.js:156
+msgid "There was an error loading your transaction history"
+msgstr ""
+
+#: src/screens/MainScreen.js:159
+msgid "Please |tryAgain:try again|"
+msgstr ""
+
+#: src/screens/MainScreen.js:544 src/screens/MainScreen.js:576
+msgid "Available Balance"
+msgstr "Доступный Баланс"
+
+#: src/screens/MainScreen.js:553
+msgid "Locked"
+msgstr "Заблокированный"
+
+#.  translator: Used when the QR Code Scanner is opened, and user will manually
+#.  enter the information.
+#: src/screens/NanoContractRegisterQrCodeScreen.js:26
+#: src/screens/Reown/ReownScan.js:41 src/screens/UnifiedQRScanner.js:88
+msgid "Manual"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:432
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:233
+#: src/screens/NanoContractRegisterQrCodeScreen.js:48
+#: src/screens/RegisterOptionsScreen.js:77
+msgid "Register Nano Contract"
+msgstr ""
+
+#: src/screens/NanoContractRegisterQrCodeScreen.js:63
+msgid "Scan the nano contract ID QR code"
+msgstr ""
+
+#: src/screens/PaymentRequestDetail.js:88
+#, javascript-format
+msgid "You've just received **${ amount } ${ symbol }**"
+msgstr "Вы только что получили **${ amount } ${ symbol }**"
+
+#: src/screens/PaymentRequestDetail.js:105
+msgid "PAYMENT REQUEST"
+msgstr "ЗАПРОС СРЕДСТВ"
+
+#: src/components/TxDetailsModal.js:97 src/screens/PaymentRequestDetail.js:129
+msgid "Token"
+msgstr "Токен"
+
+#: src/components/Reown/CreateTokenRequest.js:90
+#: src/components/TxDetailsModal.js:158 src/screens/PaymentRequestDetail.js:133
+msgid "Amount"
+msgstr "Количество"
+
+#: src/screens/PaymentRequestDetail.js:141 src/screens/Receive.js:30
+msgid "My Address"
+msgstr "Мой Адрес"
+
+#: src/screens/PaymentRequestDetail.js:145
+msgid "Status"
+msgstr "Статус"
+
+#: src/screens/PaymentRequestDetail.js:146
+msgid "Received"
+msgstr "Получено"
+
+#: src/screens/PaymentRequestDetail.js:146
+msgid "Waiting confirmation"
+msgstr "Ожидание подтверждения"
+
+#: src/screens/PinScreen.js:272
+msgid "Incorrect PIN Code. Try again."
+msgstr "Неверный PIN-код. Попробуйте еще раз."
+
+#: src/screens/PinScreen.js:76
+msgid "Enter your PIN Code "
+msgstr "Введите свой PIN-код "
+
+#: src/screens/PinScreen.js:77
+msgid "Unlock Hathor Wallet"
+msgstr "Разблокировать Hathor Wallet"
+
+#: src/components/Reown/RequestConfirmationModal.js:110
+#: src/screens/PinScreen.js:309 src/screens/Reown/ReownList.js:126
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/screens/PinScreen.js:343 src/screens/PinScreen.js:347
+msgid "Biometry failed or canceled."
+msgstr "Биометрия не удалась или была отменена."
+
+#: src/screens/PushNotification.js:58 src/screens/Settings.js:136
+msgid "Push Notification"
+msgstr ""
+
+#: src/screens/PushNotification.js:59
+msgid "Enable Push Notification"
+msgstr ""
+
+#: src/screens/PushNotification.js:60
+msgid "Show amounts on notification"
+msgstr ""
+
+#: src/screens/PushNotification.js:61
+msgid "Updating push notification..."
+msgstr ""
+
+#: src/screens/PushNotification.js:62
+msgid "There was an error enabling push notification. Please try again later."
+msgstr ""
+
+#. *
+#.      * index {number} Selected index of the tab bar
+#.      
+#.  eslint thinks routes is not used, but TabView uses it
+#.  eslint-disable-next-line react/no-unused-state
+#: src/screens/Receive.js:31
+msgid "Payment Request"
+msgstr "Запрос Средств"
+
+#: src/screens/Receive.js:93
+msgid "RECEIVE"
+msgstr "ПОЛУЧИТЬ"
+
+#: src/screens/RegisterOptionsScreen.js:26
+msgid "You can register Tokens manually."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:30
+msgid "You can register Tokens and Nano Contracts manually."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:34
+msgid "You can register Tokens and use Reown manually."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:37
+msgid "You can register Tokens, Nano Contracts or Reown manually."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:43
+#: src/screens/RegisterOptionsScreen.js:55 src/screens/UnifiedQRScanner.js:52
+#: src/screens/UnifiedQRScanner.js:69
+msgid "Feature Not Available"
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:44 src/screens/UnifiedQRScanner.js:69
+msgid "The nano contract feature is not enabled."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:45
+#: src/screens/RegisterOptionsScreen.js:57 src/screens/SendScanQRCode.js:40
+#: src/screens/UnifiedQRScanner.js:36
+msgid "OK"
+msgstr "OK"
+
+#: src/screens/RegisterOptionsScreen.js:56 src/screens/UnifiedQRScanner.js:52
+msgid "The reown feature is not enabled."
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:67
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:82
+msgid "Register"
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:83
+msgid "Register Token"
+msgstr ""
+
+#: src/screens/RegisterOptionsScreen.js:89
+msgid "Reown Connection"
+msgstr ""
+
+#.  translator: Used when the QR Code Scanner is opened, and user will manually
+#.  enter the information.
+#: src/screens/RegisterToken.js:27 src/screens/SendScanQRCode.js:92
+msgid "Manual info"
+msgstr "Ручной ввод"
+
+#: src/screens/RegisterToken.js:42 src/screens/RegisterTokenManual.js:126
+msgid "REGISTER TOKEN"
+msgstr "РЕГИСТРАЦИЯ ТОКЕНА"
+
+#: src/screens/RegisterToken.js:53
+msgid "Scan the token QR code"
+msgstr "Сканировать QR-код токена"
+
+#: src/screens/RegisterTokenManual.js:102
+msgid "You're going to register the following token:"
+msgstr "Вы зарегистрируете следующий токен:"
+
+#: src/screens/RegisterTokenManual.js:104
+msgid "Name: "
+msgstr "Имя: "
+
+#: src/screens/RegisterTokenManual.js:108
+msgid "Symbol: "
+msgstr "Символ: "
+
+#: src/screens/RegisterTokenManual.js:132
+msgid "Configuration string"
+msgstr "Конфигурация"
+
+#: src/screens/RegisterTokenManual.js:147
+msgid "Register token"
+msgstr "Зарегистрировать токен"
+
+#: src/screens/ResetWallet.js:104
+msgid "RESET WALLET"
+msgstr "СБРОСИТЬ КОШЕЛЕК"
+
+#: src/screens/ResetWallet.js:108
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: src/screens/ResetWallet.js:111
+msgid ""
+"If you reset your wallet, **all data will be deleted**, and you will **lose "
+"access to your tokens**."
+msgstr ""
+"Если вы сбросите свой кошелек, **все данные будут удалены**, и вы "
+"**потеряете доступ к своим токенам**."
+
+#: src/screens/ResetWallet.js:113
+msgid ""
+"To recover access to your tokens, you will need to import your seed words "
+"again."
+msgstr ""
+"Чтобы восстановить доступ к вашим токенам, вам потребуется ввести seed-фразу."
+
+#: src/screens/ResetWallet.js:122
+msgid ""
+"I want to reset my wallet, and I acknowledge that **all data will be wiped "
+"out**."
+msgstr ""
+"Я хочу сбросить свой кошелек и понимаю, что **все данные будут удалены**."
+
+#: src/screens/ResetWallet.js:131
+msgid "Reset Wallet"
+msgstr "Сбросить Кошелек"
+
+#: src/screens/Security.js:130
+msgid "Disable biometry"
+msgstr "Отключить биометрию"
+
+#: src/screens/Security.js:131
+msgid "Disabling biometry"
+msgstr "Отключение биометрии"
+
+#: src/screens/Security.js:143
+msgid "Enter your 6-digit pin to enable biometry"
+msgstr "Введите 6-значный PIN-код, чтобы включить биометрию"
+
+#: src/screens/Security.js:156
+msgid "No biometry supported"
+msgstr "Биометрия не поддерживается"
+
+#: src/screens/Security.js:156
+#, javascript-format
+msgid "Use ${ this.supportedBiometry }"
+msgstr "Использовать ${ this.supportedBiometry }"
+
+#: src/screens/Security.js:164
+msgid "SECURITY"
+msgstr "БЕЗОПАСНОСТЬ"
+
+#: src/screens/Security.js:186
+msgid "Change PIN"
+msgstr "Изменить PIN-код"
+
+#: src/screens/Security.js:191
+msgid "Lock wallet"
+msgstr "Заблокировать кошелек"
+
+#: src/screens/SendAddressInput.js:53 src/screens/SendScanQRCode.js:100
+msgid "SEND"
+msgstr "ОТПРАВИТЬ"
+
+#: src/screens/SendAddressInput.js:59
+msgid "Address to send"
+msgstr "Адрес отправки"
+
+#: src/screens/SendAmountInput.js:97
+msgid "Insufficient funds"
+msgstr "Недостаточно средств"
+
+#: src/screens/SendAmountInput.js:122
+#, javascript-format
+msgid "${ amountAndToken } available"
+msgid_plural "${ amountAndToken } available"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/screens/SendAmountInput.js:136 src/screens/SendConfirmScreen.js:129
+msgid "SEND ${ tokenNameUpperCase }"
+msgstr "ОТПРАВИТЬ ${ tokenNameUpperCase }"
+
+#.  show loading modal
+#: src/screens/SendConfirmScreen.js:70
+msgid "Your transfer is being processed"
+msgstr "Ваш перевод обрабатывается"
+
+#: src/sagas/helpers.js:140 src/screens/SendConfirmScreen.js:83
+msgid "Enter your 6-digit pin to authorize operation"
+msgstr "Введите 6-значный PIN-код для авторизации операции"
+
+#: src/sagas/helpers.js:141 src/screens/SendConfirmScreen.js:84
+msgid "Authorize operation"
+msgstr "Авторизовать операцию"
+
+#: src/screens/SendConfirmScreen.js:120
+#, javascript-format
+msgid "${ availablePretty } available"
+msgid_plural "${ availablePretty } available"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/screens/SendConfirmScreen.js:138
+msgid "Your transfer of **${ amountAndToken }** has been confirmed"
+msgstr "Ваш перевод **${ amountAndToken }** был подтвержден"
+
+#: src/components/NanoContract/EditAddressModal.js:63
+#: src/components/NanoContract/SelectAddressModal.js:131
+#: src/components/Reown/SendTransactionRequest.js:285
+#: src/components/Reown/SendTransactionRequest.js:322
+#: src/components/Reown/SignMessageRequest.js:40
+#: src/components/Reown/SignOracleDataRequest.js:47
+#: src/screens/SendConfirmScreen.js:157
+msgid "Address"
+msgstr "Адрес"
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:295
+#: src/screens/SendConfirmScreen.js:164
+msgid "Send"
+msgstr "Отправить"
+
+#: src/screens/SendScanQRCode.js:37
+msgid "Invalid QR code"
+msgstr "Неверный QR-код"
+
+#: src/screens/SendScanQRCode.js:76
+#, javascript-format
+msgid "You don't have the requested token [${ tokenLabel }]"
+msgstr "У вас нет запрошенного токена [${ tokenLabel }]"
+
+#: src/screens/Reown/ReownScan.js:49 src/screens/SendScanQRCode.js:108
+#: src/screens/UnifiedQRScanner.js:96
+msgid "Scan the QR code"
+msgstr "Сканировать QR-код"
+
+#: src/screens/Settings.js:105
+msgid "You are connected to"
+msgstr "Вы подключены к"
+
+#: src/screens/Settings.js:113
+msgid "General Settings"
+msgstr ""
+
+#: src/screens/Settings.js:117
+msgid "Connected to"
+msgstr "Подключены к"
+
+#: src/screens/Settings.js:130
+msgid "Security"
+msgstr "Безопасность"
+
+#: src/screens/Settings.js:143
+msgid "Create a new token"
+msgstr "Создать новый токен"
+
+#: src/screens/Settings.js:150
+msgid "Register a token"
+msgstr "Зарегистрировать токен"
+
+#: src/screens/Settings.js:166
+msgid "About"
+msgstr "О нас"
+
+#: src/screens/Settings.js:173
+msgid "Unique app identifier"
+msgstr ""
+
+#: src/screens/Settings.js:187
+msgid "Developer Settings"
+msgstr ""
+
+#: src/screens/Settings.js:189
+msgid "Network Settings"
+msgstr ""
+
+#: src/screens/TokenDetail.js:38
+msgid "Unregister"
+msgstr "Отменить регистрацию"
+
+#.  If none of the patterns match, show an error or handle accordingly
+#: src/screens/UnifiedQRScanner.js:77
+msgid "Invalid QR Code"
+msgstr ""
+
+#.  If none of the patterns match, show an error or handle accordingly
+#: src/screens/UnifiedQRScanner.js:77
+msgid "The scanned QR code is not in a recognized format."
+msgstr ""
+
+#: src/screens/UnifiedQRScanner.js:83
+msgid "Scan QR Code"
+msgstr ""
+
+#: src/screens/UnregisterToken.js:108
+msgid "UNREGISTER TOKEN"
+msgstr "ОТМЕНИТЬ РЕГИСТРАЦИЮ ТОКЕНА"
+
+#: src/screens/UnregisterToken.js:113
+msgid ""
+"If you unregister this token **you won't be able to execute operations with "
+"it**, unless you register it again."
+msgstr ""
+"Если вы отмените регистрацию этого токена, **вы не сможете выполнять "
+"операции с ним**, пока не зарегистрируете его снова."
+
+#: src/screens/UnregisterToken.js:116
+msgid ""
+"You won't lose your tokens, they will just not appear on this wallet anymore."
+msgstr ""
+"Вы не потеряете свои токены, они просто больше не будут появляться на этом "
+"кошельке."
+
+#: src/screens/UnregisterToken.js:120
+#, javascript-format
+msgid "I want to unregister the token **${ tokenLabel }**"
+msgstr "Я хочу отменить регистрацию токена **${ tokenLabel }**"
+
+#: src/screens/UnregisterToken.js:135
+msgid "Unregister token"
+msgstr "Отменить регистрацию токена"
+
+#: src/screens/Reown/CreateNanoContractCreateTokenTxScreen.js:25
+msgid "Create Nano Contract & Token"
+msgstr ""
+
+#: src/screens/Reown/CreateTokenScreen.js:25
+msgid "Create Token Request"
+msgstr ""
+
+#: src/screens/Reown/GetBalanceRequestScreen.js:25
+msgid "Get Balance Request"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NewNanoContractTransactionModal.js:19
+#: src/screens/Reown/NewNanoContractTransactionScreen.js:24
+msgid "New Nano Contract Transaction"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:281
+#: src/components/Reown/SendTransactionRequest.js:458
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:35
+msgid "Transaction successfully sent."
+msgstr ""
+
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:38
+#, javascript-format
+msgid ""
+"There are ${ tokens.length } unregistered tokens in this transaction. Do you "
+"want to register them?"
+msgstr ""
+
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:40
+msgid ""
+"There is 1 unregistered token in this transaction. Do you want to register "
+"it?"
+msgstr ""
+
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:86
+#: src/screens/Reown/SuccessFeedbackScreen.js:36
+msgid "Back"
+msgstr ""
+
+#: src/screens/Reown/RegisterTokenAfterSuccess.js:96
+msgid "Success"
+msgstr ""
+
+#: src/screens/Reown/ReownList.js:33
+msgid "There was an error connecting. Please try again later."
+msgstr ""
+
+#.  translator: Used when the QR Code Scanner is opened, and user will manually
+#.  enter the information.
+#: src/screens/Reown/ReownList.js:112
+msgid "Add"
+msgstr ""
+
+#: src/screens/Reown/ReownList.js:118
+msgid "End session"
+msgstr ""
+
+#: src/screens/Reown/ReownList.js:118
+msgid "This will disconnect the session."
+msgstr ""
+
+#: src/screens/Reown/ReownList.js:120
+msgid "End"
+msgstr ""
+
+#: src/screens/Reown/ReownList.js:138
+msgid "Reown Sessions"
+msgstr ""
+
+#: src/screens/Reown/ReownManual.js:39
+msgid "Manual Connection"
+msgstr ""
+
+#: src/screens/Reown/ReownManual.js:45
+msgid "Reown URI"
+msgstr ""
+
+#: src/screens/Reown/ReownManual.js:57 src/screens/Reown/ReownScan.js:34
+msgid "Connect"
+msgstr ""
+
+#: src/components/Reown/SendTransactionModal.js:21
+#: src/screens/Reown/SendTransactionRequestScreen.js:25
+msgid "Transaction Request"
+msgstr ""
+
+#: src/screens/Reown/SignMessageRequestScreen.js:25
+msgid "Sign Message Request"
+msgstr ""
+
+#: src/screens/Reown/SignOracleDataRequestScreen.js:25
+msgid "Sign Oracle Data Request"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:19
+msgid "Custom Network Settings"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:20
+msgid ""
+"Any token outside mainnet network bear no value. Only change if you know "
+"what you are doing."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:21
+#: src/screens/NetworkSettings/helper.js:11
+msgid "Updating custom network settings..."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:22
+#: src/screens/NetworkSettings/helper.js:12
+msgid "Network settings successfully customized."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:23
+#: src/screens/NetworkSettings/helper.js:13
+msgid ""
+"There was an error while customizing network settings. Please try again "
+"later."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:42
+msgid "nodeUrl is required."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:46
+msgid "explorerUrl is required."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:50
+msgid "explorerServiceUrl is required."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:54
+msgid "txMiningServiceUrl is required."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:63
+msgid "walletServiceUrl is required when walletServiceWsUrl is filled."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:66
+msgid "walletServiceWsUrl is required when walletServiceUrl is filled."
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:236
+msgid "Node URL"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:246
+msgid "Explorer URL"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:255
+msgid "Explorer Service URL"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:264
+msgid "Transaction Mining Service URL"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:275
+msgid "Wallet Service URL (optional)"
+msgstr ""
+
+#: src/screens/NetworkSettings/CustomNetworkSettingsScreen.js:284
+msgid "Wallet Service WS URL (optional)"
+msgstr ""
+
+#: src/screens/NetworkSettings/NetworkPreSettingsScreen.js:29
+msgid "Network Pre-Settings"
+msgstr ""
+
+#: src/screens/NetworkSettings/NetworkPreSettingsScreen.js:131
+msgid "Customize"
+msgstr ""
+
+#: src/screens/NetworkSettings/NetworkSettingsDisclaimerScreen.js:19
+msgid "Risk Disclaimer"
+msgstr ""
+
+#: src/screens/NetworkSettings/NetworkSettingsDisclaimerScreen.js:20
+msgid ""
+"Do not change this unless you know what you are doing, and under no "
+"circumstances change these settings based on someone else suggestion, as "
+"this can potentially make you susceptible to fraudulent schemes."
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractDetailsScreen.js:39
+msgid "Nano Contract Details"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:58
+msgid "Nano Contract ID is required."
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:158
+msgid "See contract"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:176
+msgid "Load First Addresses Error"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetails.js:213
+#: src/components/NanoContract/SelectAddressModal.js:119
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:405
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:476
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:184
+msgid "Loading"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:185
+msgid "Loading first wallet address."
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:167
+#: src/components/NanoContract/NanoContractTransactionHeader.js:85
+#: src/components/NanoContract/NanoContractsListItem.js:57
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:80
+#: src/components/TxDetailsModal.js:113
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:194
+msgid "Nano Contract ID"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:202
+msgid "Wallet Address"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:212
+msgid "If you want to change the wallet address, you will be able to do"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:214
+msgid "after the contract is registered."
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractRegisterScreen.js:251
+msgid "Nano Contract Registration"
+msgstr ""
+
+#: src/screens/NanoContract/NanoContractTransactionScreen.js:44
+msgid "Nano Contract Transaction"
+msgstr ""
+
+#: src/screens/NanoContract/helper.js:11
+msgid "Contract successfully registered."
+msgstr ""
+
+#: src/sagas/nanoContract.js:45
+msgid "Nano Contract already registered."
+msgstr ""
+
+#: src/sagas/nanoContract.js:46
+msgid "Wallet is not ready yet to register a Nano Contract."
+msgstr ""
+
+#: src/sagas/nanoContract.js:47
+msgid "The informed address does not belong to the wallet."
+msgstr ""
+
+#: src/sagas/nanoContract.js:48
+msgid "Nano Contract not found."
+msgstr ""
+
+#: src/sagas/nanoContract.js:49
+msgid "Error while trying to register Nano Contract."
+msgstr ""
+
+#: src/sagas/nanoContract.js:50
+msgid "Invalid transaction to register as Nano Contract."
+msgstr ""
+
+#: src/sagas/nanoContract.js:51
+msgid "Blueprint not found."
+msgstr ""
+
+#: src/sagas/nanoContract.js:52
+msgid "Couldn't get Blueprint info."
+msgstr ""
+
+#: src/sagas/nanoContract.js:53
+msgid "Nano Contract not registered."
+msgstr ""
+
+#: src/sagas/nanoContract.js:54
+msgid "Error while trying to download Nano Contract transactions history."
+msgstr ""
+
+#: src/sagas/networkSettings.js:86
+msgid "Custom Network Settings cannot be empty."
+msgstr ""
+
+#: src/sagas/networkSettings.js:93
+msgid "explorerUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/networkSettings.js:100
+msgid "explorerServiceUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/networkSettings.js:107
+msgid "txMiningServiceUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/networkSettings.js:114
+msgid "nodeUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/networkSettings.js:121
+msgid "walletServiceUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/networkSettings.js:128
+msgid "walletServiceWsUrl should be a valid URL."
+msgstr ""
+
+#: src/sagas/pushNotification.js:77
+msgid "Transaction"
+msgstr ""
+
+#: src/sagas/pushNotification.js:78
+msgid "Open"
+msgstr "Открыть"
+
+#: src/sagas/wallet.js:817
+msgid "Wallet is not ready to load addresses."
+msgstr ""
+
+#.  This will show the message in the feedback content at SelectAddressModal
+#: src/sagas/wallet.js:831
+msgid "There was an error while loading wallet addresses. Try again."
+msgstr ""
+
+#: src/sagas/wallet.js:841
+msgid "Wallet is not ready to load the first address."
+msgstr ""
+
+#.  This will show the message in the feedback content
+#: src/sagas/wallet.js:857
+msgid "There was an error while loading first wallet address. Try again."
+msgstr ""
+
+#: src/components/AskForPushNotification.js:29
+msgid "Do you want to enable push notifications for this wallet?"
+msgstr ""
+
+#: src/components/AskForPushNotification.js:30
+msgid "You can always change this later in the settings menu"
+msgstr ""
+
+#: src/components/AskForPushNotification.js:31
+msgid "Yes, enable"
+msgstr ""
+
+#: src/components/AskForPushNotificationRefresh.js:35
+msgid "Refresh your push notification registration"
+msgstr ""
+
+#: src/components/AskForPushNotificationRefresh.js:36
+msgid ""
+"In order to keep receiving push notifications, you need to refresh your "
+"registration. Do you want to do it now?"
+msgstr ""
+
+#: src/components/AskForPushNotificationRefresh.js:37
+msgid "Refresh"
+msgstr ""
+
+#: src/components/CopyClipboard.js:55
+msgid "Copied to clipboard!"
+msgstr "Скопировано в буфер обмена!"
+
+#: src/components/GlobalErrorModal.js:46
+msgid ""
+"Thanks for reporting the error to the team. We will investigate it to "
+"prevent from happening again."
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:79
+msgid "Unexpected error"
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:83
+msgid "Please restart your app to continue using the wallet."
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:104
+msgid ""
+"Unfortunately an unhandled error happened and you will need to restart your "
+"app.\n"
+"\n"
+"We kindly ask you to report this error to the Hathor team clicking on the "
+"button below.\n"
+"\n"
+"No sensitive data will be shared."
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:107
+msgid ""
+"Unfortunately an unhandled error happened.\n"
+"\n"
+"We kindly ask you to report this error to the Hathor team clicking on the "
+"button below.\n"
+"\n"
+"No sensitive data will be shared."
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:118
+msgid "Unexpected error occurred"
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:121
+msgid "Report error"
+msgstr ""
+
+#: src/components/GlobalErrorModal.js:126
+#: src/components/Reown/InsufficientFundsModal.js:39
+#: src/components/Reown/TokenInfoModal.js:114
+msgid "Close"
+msgstr ""
+
+#: src/components/NewPaymentRequest.js:189
+msgid "Create payment request"
+msgstr "Создать запрос на получение средств"
+
+#: src/components/OfflineBar.js:53
+msgid "No internet connection"
+msgstr "Нет соединения с интернетом"
+
+#: src/components/PublicExplorerListButton.js:17
+msgid "Public Explorer"
+msgstr "Public Explorer"
+
+#: src/components/PushTxDetailsModal.js:77 src/components/TxDetailsModal.js:99
+msgid "Date & Time"
+msgstr "Дата и Время"
+
+#: src/components/PushTxDetailsModal.js:78
+msgid "ID"
+msgstr "ID"
+
+#: src/components/PushTxDetailsModal.js:102
+msgid "New Transaction"
+msgstr ""
+
+#: src/components/ReceiveMyAddress.js:34
+#, javascript-format
+msgid "Here is my address: ${ lastSharedAddress }"
+msgstr "Это мой адрес: ${ lastSharedAddress }"
+
+#: src/components/ReceiveMyAddress.js:72
+msgid "New address"
+msgstr "Новый адрес"
+
+#: src/components/ReceiveMyAddress.js:78 src/components/TokenDetails.js:61
+msgid "Share"
+msgstr "Поделиться"
+
+#: src/components/SendTransactionFeedbackModal.js:162
+msgid "Propagating transaction to the network."
+msgstr ""
+
+#: src/components/ShowPushNotificationTxDetails.js:16
+msgid "Transation not found"
+msgstr ""
+
+#: src/components/ShowPushNotificationTxDetails.js:17
+msgid ""
+"The transaction has not arrived yet in your wallet. Do you want to retry?"
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:111
+#: src/components/ShowPushNotificationTxDetails.js:18
+msgid "Retry"
+msgstr ""
+
+#: src/components/TokenDetails.js:34
+#, javascript-format
+msgid ""
+"Here is the configuration string of token ${ tokenLabel }: ${ configString }"
+msgstr "Это конфигурация вашего токена ${ tokenLabel }: ${ configString }"
+
+#: src/components/TransactionStatusLabel.js:69
+msgid "Executed"
+msgstr ""
+
+#: src/components/TransactionStatusLabel.js:74
+msgid "Processing"
+msgstr ""
+
+#: src/components/TransactionStatusLabel.js:79
+msgid "Voided"
+msgstr ""
+
+#: src/components/TxDetailsModal.js:98
+msgid "Description"
+msgstr "Описание"
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:44
+#: src/components/Reown/SendTransactionRequest.js:274
+#: src/components/TxDetailsModal.js:100
+msgid "Transaction ID"
+msgstr ""
+
+#: src/components/TxDetailsModal.js:103
+msgid "Nano Contract Status"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:89
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:113
+#: src/components/TxDetailsModal.js:112
+msgid "Blueprint Method"
+msgstr ""
+
+#: src/components/TxDetailsModal.js:114
+msgid "Nano Contract Caller"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:99
+#: src/components/TxDetailsModal.js:115
+msgid "Nano Contract"
+msgstr ""
+
+#: src/components/Reown/ApproveRejectModal.js:70
+msgid "Reject"
+msgstr ""
+
+#: src/components/Reown/ApproveRejectModal.js:71
+msgid "Approve"
+msgstr ""
+
+#: src/components/Reown/ConnectModal.js:85
+msgid "Connect to this dApp?"
+msgstr ""
+
+#: src/components/Reown/ConnectModal.js:88
+msgid ""
+"By clicking connect, you allow this dapp to receive your wallet's public "
+"address. Please validate the URL and the dApp name, this is an important "
+"security step to protect your data from potential phishing risks."
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxModal.js:21
+msgid "Create Nano Contract Create Token Request"
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxModal.js:22
+msgid ""
+"You have received a new Create Nano Contract Create Token Request. Please "
+"carefully review the details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxModal.js:23
+msgid "Review request details"
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxRequest.js:51
+msgid "Create Token Data"
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxRequest.js:70
+#: src/components/Reown/CreateTokenRequest.js:182
+#: src/components/Reown/SignMessageRequest.js:81
+#: src/components/Reown/SignOracleDataRequest.js:148
+msgid "Accept Request"
+msgstr ""
+
+#: src/components/Reown/CreateNanoContractCreateTokenTxRequest.js:71
+#: src/components/Reown/CreateTokenRequest.js:186
+#: src/components/Reown/SignMessageRequest.js:85
+#: src/components/Reown/SignOracleDataRequest.js:152
+msgid "Decline Request"
+msgstr ""
+
+#: src/components/Reown/CreateTokenModal.js:19
+msgid "New Create Token Request"
+msgstr ""
+
+#: src/components/Reown/CreateTokenModal.js:20
+msgid ""
+"You have received a new Create Token Request. Please carefully review the "
+"details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/CreateTokenModal.js:21
+msgid "Review Create Token Request details"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:76
+msgid "Yes"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:76
+msgid "No"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:88
+#: src/components/Reown/TokenInfoModal.js:93
+msgid "Name"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:89
+#: src/components/Reown/TokenInfoModal.js:98
+msgid "Symbol"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:91
+#, javascript-format
+msgid "Address to send newly minted ${ data.symbol }"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:92
+msgid "Address to send change ${ DEFAULT_TOKEN.symbol }"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:93
+msgid "Create mint authority?"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:94
+msgid "Create melt authority?"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:95
+msgid "Address to send the mint authority"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:96
+msgid "Address to send the melt authority"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:100
+msgid "Allow external mint authority addresses?"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:107
+msgid "Allow external melt authority addresses?"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:111
+msgid "Contract pays token deposit?"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:112
+msgid "Token data"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:196
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:496
+#: src/components/Reown/SendTransactionRequest.js:473
+msgid "Sending transaction"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:197
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:497
+#: src/components/Reown/SendTransactionRequest.js:474
+msgid "Please wait."
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:216
+msgid "Create Token Transaction successfully sent."
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:218
+msgid "Ok, close"
+msgstr ""
+
+#: src/components/Reown/CreateTokenRequest.js:225
+msgid "Error while sending create token transaction."
+msgstr ""
+
+#: src/components/Reown/GetBalanceModal.js:19
+msgid "New Get Balance Request"
+msgstr ""
+
+#: src/components/Reown/GetBalanceModal.js:20
+msgid ""
+"You have received a new Get Balance Request. Please carefully review the "
+"details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/GetBalanceModal.js:21
+msgid "Review Get Balance Request details"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:42
+msgid "Balance Request"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:44
+msgid "This app is requesting access to your token balances"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:57
+msgid "Tokens to be shared"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:62
+msgid "Unregistered token"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:75
+msgid "Available:"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:82
+msgid "Locked:"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:100
+msgid ""
+"The app will only receive your balance information. It cannot access your "
+"funds or make transactions."
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:133
+msgid "Share Balance Information"
+msgstr ""
+
+#: src/components/Reown/GetBalanceRequest.js:137
+msgid "Decline"
+msgstr ""
+
+#: src/components/Reown/InsufficientFundsModal.js:37
+msgid "Insufficient funds to complete the transaction."
+msgstr ""
+
+#: src/components/Reown/RequestConfirmationModal.js:39
+msgid ""
+"You have received a new request. Please carefully review the details before "
+"deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/RequestConfirmationModal.js:40
+msgid "Review details"
+msgstr ""
+
+#: src/components/Reown/SendTransactionModal.js:22
+msgid ""
+"You have received a new transaction request. Please carefully review the "
+"details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/NanoContract/NewNanoContractTransactionModal.js:21
+#: src/components/Reown/SendTransactionModal.js:23
+msgid "Review transaction details"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:262
+msgid "Inputs"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:271
+msgid "Input"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:281
+msgid "Copy ID"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:308
+msgid "Outputs"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:317
+msgid "Output"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:335
+msgid "Data field"
+msgstr ""
+
+#: src/components/Reown/SendTransactionRequest.js:357
+msgid "Change Address"
+msgstr ""
+
+#.  No unregistered tokens, just show success
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:280
+#: src/components/Reown/SendTransactionRequest.js:457
+msgid "Success!"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:135
+#: src/components/Reown/NanoContract/NewNanoContractTransactionRequest.js:52
+#: src/components/Reown/SendTransactionRequest.js:502
+msgid "Accept Transaction"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:136
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:437
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:461
+#: src/components/Reown/NanoContract/NewNanoContractTransactionRequest.js:53
+#: src/components/Reown/SendTransactionRequest.js:506
+msgid "Decline Transaction"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:590
+#: src/components/Reown/SendTransactionRequest.js:523
+msgid "Error while sending transaction."
+msgstr ""
+
+#: src/components/Reown/SignMessageModal.js:19
+msgid "New Sign Message Request"
+msgstr ""
+
+#: src/components/Reown/SignMessageModal.js:20
+msgid ""
+"You have received a new Sign Message Request. Please carefully review the "
+"details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/SignMessageModal.js:21
+msgid "Review Sign Message Request details"
+msgstr ""
+
+#: src/components/Reown/SignMessageRequest.js:35
+msgid "Message to sign"
+msgstr ""
+
+#: src/components/Reown/SignMessageRequest.js:45
+msgid "Address Path"
+msgstr ""
+
+#: src/components/Reown/SignOracleDataRequest.js:41
+msgid "Oracle"
+msgstr ""
+
+#: src/components/Reown/SignOracleDataRequest.js:74
+msgid "Data"
+msgstr ""
+
+#: src/components/Reown/TokenInfoModal.js:90
+msgid "Unregistered Token"
+msgstr ""
+
+#: src/components/Reown/TokenInfoModal.js:103
+msgid "Token UID"
+msgstr ""
+
+#: src/components/Reown/TokenInfoModal.js:108
+msgid "Tap to copy"
+msgstr ""
+
+#: src/components/Reown/WarnDisclaimer.js:27
+msgid ""
+"Caution: There are risks associated with signing dapp transaction requests."
+msgstr ""
+
+#: src/components/Reown/WarnDisclaimer.js:33
+msgid "Read More."
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:406
+msgid "Registering Nano Contract."
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:425
+msgid "Nano Contract Not Found"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:426
+msgid ""
+"The Nano Contract requested is not registered. First register the Nano "
+"Contract to interact with it."
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:459
+msgid "Error while registering Nano Contract."
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:477
+msgid "Loading transaction information."
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:551
+msgid "Insufficient Funds"
+msgstr ""
+
+#: src/components/Reown/NanoContract/BaseNanoContractRequest.js:552
+msgid ""
+"Ensure your wallet balance covers the required amount to accept this "
+"transaction."
+msgstr ""
+
+#: src/components/Reown/NanoContract/DappContainer.js:45
+msgid "Review your transaction from this dApp"
+msgstr ""
+
+#: src/components/Reown/NanoContract/DappContainer.js:48
+msgid "Stay vigilant and protect your data from potential phishing attempts."
+msgstr ""
+
+#: src/components/Reown/NanoContract/DeclineModal.js:26
+msgid "Decline transaction"
+msgstr ""
+
+#: src/components/Reown/NanoContract/DeclineModal.js:29
+msgid "Are you sure you want to decline this transaction?"
+msgstr ""
+
+#: src/components/Reown/NanoContract/DeclineModal.js:33
+msgid "Yes, decline transaction"
+msgstr ""
+
+#: src/components/NanoContract/UnregisterNanoContractModal.js:50
+#: src/components/Reown/NanoContract/DeclineModal.js:39
+msgid "No, go back"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:75
+msgid "Action List"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:184
+msgid "Address to send amount:"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:194
+#: src/components/Reown/NanoContract/NanoContractActions.js:212
+msgid "Address to filter UTXOs:"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:200
+msgid "Change address:"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:218
+msgid "Address to send new authority:"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractActions.js:228
+msgid "Address to send authority:"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:85
+msgid "Blueprint ID"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:171
+#: src/components/NanoContract/NanoContractsListItem.js:59
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:90
+msgid "Blueprint Name"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:106
+msgid "Loading..."
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:103
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:121
+msgid "Caller"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractExecInfo.js:132
+msgid "Couldn't determine address, select one"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractMethodArgs.js:50
+msgid "Arguments"
+msgstr ""
+
+#: src/components/Reown/NanoContract/NanoContractMethodArgs.js:55
+msgid "Loading arguments."
+msgstr ""
+
+#: src/components/Reown/NanoContract/NewNanoContractTransactionModal.js:20
+msgid ""
+"You have received a new Nano Contract Transaction. Please carefully review "
+"the details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/NanoContract/SignOracleDataModal.js:19
+msgid "New Sign Oracle Data Request"
+msgstr ""
+
+#: src/components/Reown/NanoContract/SignOracleDataModal.js:20
+msgid ""
+"You have received a new Sign Oracle Data Request. Please carefully review "
+"the details before deciding to accept or decline."
+msgstr ""
+
+#: src/components/Reown/NanoContract/SignOracleDataModal.js:21
+msgid "Review Sign Oracle Data Request details"
+msgstr ""
+
+#: src/components/Reown/NanoContract/SignedDataDisplay.js:37
+msgid "Value"
+msgstr ""
+
+#: src/components/Reown/NanoContract/SignedDataDisplay.js:40
+msgid "Signature"
+msgstr ""
+
+#: src/components/NetworkSettings/NetworkStatusBar.js:14
+msgid "Custom network"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:44
+msgid "New Nano Contract Address"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:52
+msgid ""
+"This address signs any transaction you create with Nano Contracts method. "
+"Switching to a new one means"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:54
+msgid "all future transactions will use this address."
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:60
+msgid "Selected Information"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:70
+msgid "Index"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:77
+msgid "Confirm new address"
+msgstr ""
+
+#: src/components/NanoContract/EditAddressModal.js:81
+msgid "Go back"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetails.js:188
+msgid "Load More"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetails.js:214
+msgid "Loading Nano Contract transactions."
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetails.js:228
+msgid "Nano Contract Transactions Error"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:175
+msgid "Registered Address"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:178
+msgid "See status details"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractDetailsHeader.js:179
+msgid "Unregister contract"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionActionList.js:44
+msgid "No Actions"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionActionList.js:45
+msgid "See full transaction details on Public Explorer."
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:93
+msgid "Date and Time"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:100
+#: src/components/NanoContract/NanoContractTransactionsListItem.js:62
+msgid "From this wallet"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractTransactionHeader.js:106
+msgid "See transaction details"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractsList.js:82
+msgid "No Nano Contracts"
+msgstr ""
+
+#: src/components/NanoContract/NanoContractsList.js:83
+msgid ""
+"You can keep track of your registered Nano Contracts here once you have "
+"registered them."
+msgstr ""
+
+#: src/components/NanoContract/RegisterNewNanoContractButton.js:22
+msgid "Register new"
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:102
+msgid "Choose New Wallet Address"
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:109
+msgid "Load Addresses Error"
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:120
+msgid "Loading wallet addresses."
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:128
+msgid "Current Information"
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:129
+msgid "To change, select other address on the list below."
+msgstr ""
+
+#: src/components/NanoContract/SelectAddressModal.js:182
+msgid "index"
+msgstr ""
+
+#: src/components/NanoContract/UnregisterNanoContractModal.js:39
+msgid "Unregister Nano Contract"
+msgstr ""
+
+#: src/components/NanoContract/UnregisterNanoContractModal.js:41
+msgid "Are you sure you want to unregister this Nano Contract?"
+msgstr ""
+
+#: src/components/NanoContract/UnregisterNanoContractModal.js:44
+msgid "Yes, unregister contract"
+msgstr ""
+
+#: src/components/NanoContract/common/NanoContractActionUtils.js:23
+#, javascript-format
+msgid "${ tokenSymbol } Deposit"
+msgstr ""
+
+#: src/components/NanoContract/common/NanoContractActionUtils.js:24
+msgid "${ tokenSymbol } Withdrawal"
+msgstr ""
+
+#: src/components/NanoContract/common/NanoContractActionUtils.js:25
+#, javascript-format
+msgid "${ tokenSymbol } Grant Authority"
+msgstr ""
+
+#: src/components/NanoContract/common/NanoContractActionUtils.js:26
+msgid "${ tokenSymbol } Acquire Authority"
+msgstr ""
