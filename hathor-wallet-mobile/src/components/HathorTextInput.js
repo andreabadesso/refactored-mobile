@@ -18,7 +18,10 @@ const HathorTextInput = (props) => (
       borderRadius: 4,
       borderColor: COLORS.borderColorMid,
       borderWidth: 1,
+      color: COLORS.textColor,
+      backgroundColor: COLORS.card,
     }, props.style]}
+    placeholderTextColor={COLORS.muted}
     keyboardAppearance='dark'
   />
 );

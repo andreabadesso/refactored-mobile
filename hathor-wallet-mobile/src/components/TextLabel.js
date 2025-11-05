@@ -10,6 +10,7 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
+import { COLORS } from '../styles/themes';
 
 export const TextLabel = ({ pb8, bold, children }) => (
   <Text style={[
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
   textLabel: {
     fontSize: 12,
     lineHeight: 20,
-    color: 'hsla(0, 0%, 38%, 1)',
+    color: COLORS.textLabel,
   },
   pb8: {
     paddingBottom: 8,

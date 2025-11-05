@@ -87,26 +87,26 @@ const style = StyleSheet.create({
   wrapper: {
     height: 48,
     borderRadius: 8,
-    backgroundColor: COLORS.textColor,
+    backgroundColor: COLORS.primary,
     alignSelf: 'stretch',
     paddingHorizontal: 16,
     justifyContent: 'center',
     alignItems: 'center',
   },
   wrapperDisabled: {
-    backgroundColor: COLORS.textColorShadowOpacity005,
+    backgroundColor: COLORS.muted,
   },
   wrapperSecondary: {
-    backgroundColor: COLORS.backgroundColor,
-    borderColor: COLORS.textColor,
+    backgroundColor: COLORS.card,
+    borderColor: COLORS.borderColor,
     borderWidth: 1.5,
   },
   wrapperSecondaryDisabled: {
-    borderColor: COLORS.textColorShadow,
+    borderColor: COLORS.muted,
   },
   wrapperDiscrete: {
-    backgroundColor: COLORS.backgroundColor,
-    borderColor: COLORS.backgroundColor,
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
     borderWidth: 1.5,
   },
   wrapperSecondaryDanger: {
@@ -116,23 +116,23 @@ const style = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 14,
     textTransform: 'uppercase',
-    color: COLORS.backgroundColor,
+    color: COLORS.white,
     textAlign: 'center',
   },
   textSecondary: {
     color: COLORS.textColor,
   },
   textSecondaryDisabled: {
-    color: COLORS.textColorShadow,
+    color: COLORS.muted,
   },
   textDisabled: {
-    color: COLORS.textColorShadow,
+    color: COLORS.mutedForeground,
   },
   textDiscrete: {
-    color: COLORS.freeze300,
+    color: COLORS.textColor,
   },
   textSecondaryDanger: {
-    color: COLORS.errorBgColor,
+    color: COLORS.errorTextColor,
   },
 });
 

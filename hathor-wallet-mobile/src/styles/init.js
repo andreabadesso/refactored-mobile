@@ -24,11 +24,13 @@ const baseStyle = StyleSheet.create({
     fontSize: 20,
     marginBottom: 16,
     backgroundColor: COLORS.backgroundColor,
+    color: COLORS.textColor,
   },
   text: {
     fontSize: 16,
     lineHeight: 24,
     marginBottom: 24,
+    color: COLORS.textColor,
   },
   link: {
     color: COLORS.primary,

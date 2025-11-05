@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     width: 105,
   },
   warningContainer: {
-    backgroundColor: '#F2C3BE',
+    backgroundColor: COLORS.feedbackError200,
     borderRadius: 8,
     padding: 16,
     flexDirection: 'row',
@@ -82,12 +82,12 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   warningIcon: {
-    color: '#991300',
+    color: COLORS.feedbackError600,
     marginRight: 8,
     fontSize: 16,
   },
   warningText: {
-    color: '#000000',
+    color: COLORS.textColor,
     fontSize: 14,
     lineHeight: 20,
     flex: 1,
@@ -96,10 +96,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   disabledButton: {
-    backgroundColor: '#E5E5E5',
+    backgroundColor: COLORS.muted,
   },
   disabledButtonText: {
-    color: '#737373',
+    color: COLORS.mutedForeground,
   },
 });
 

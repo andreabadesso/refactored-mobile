@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     padding: 0,
     fontSize: 14,
+    color: COLORS.textColor,
   },
   text: {
     color: COLORS.textColor,

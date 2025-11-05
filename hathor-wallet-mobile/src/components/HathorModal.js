@@ -33,8 +33,8 @@ const HathorModal = (props) => (
 
 const styles = StyleSheet.create({
   view: {
-    backgroundColor: COLORS.backgroundColor,
-    borderRadius: 8,
+    backgroundColor: COLORS.card,
+    borderRadius: 16,
     paddingBottom: 24,
     paddingTop: 42,
     minHeight: 290,

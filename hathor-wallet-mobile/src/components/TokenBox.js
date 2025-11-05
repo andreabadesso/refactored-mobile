@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     lineHeight: 19,
+    color: COLORS.textColor,
   },
 });
 

@@ -9,7 +9,7 @@ import 'react-native-gesture-handler';
 import '../shim';
 
 import React, { useEffect, useState } from 'react';
-import { AppState, StyleSheet, View } from 'react-native';
+import { AppState, StatusBar, StyleSheet, View } from 'react-native';
 import { connect, Provider, useDispatch, useSelector } from 'react-redux';
 import * as Keychain from 'react-native-keychain';
 import DeviceInfo from 'react-native-device-info';
@@ -831,6 +831,7 @@ const App = () => (
   <SafeAreaProvider>
     <Provider store={store}>
       <PortalProvider>
+        <StatusBar barStyle="light-content" backgroundColor={COLORS.backgroundColor} />
         <SafeAreaView
           edges={['top', 'right', 'left']}
           style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}

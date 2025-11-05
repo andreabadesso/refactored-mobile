@@ -10,57 +10,84 @@ import { _PRIMARY_COLOR as PRIMARY_COLOR } from '../config';
 import { HslColor } from '../HslColor';
 
 /**
- * Light theme color scheme
+ * Dark theme color scheme - Matching web-wallet design
+ * Design tokens from web-wallet Tailwind config
  */
 export const COLORS = {
-  white: '#fff',
-  black: '#000',
+  white: '#FFFFFF',
+  black: '#000000',
   /**
-   * @type {string} The main background color
+   * @type {string} The main background color - Dark theme
    */
-  backgroundColor: '#fff',
+  backgroundColor: '#0D1117',
   /**
    * @type {string} Low contrast with background, like separator lines
    */
-  lowContrastDetail: '#f7f7f7',
+  lowContrastDetail: '#21262D',
   /**
    * @type {string} Medium contrast with background, like placeholders
    */
-  midContrastDetail: '#9e9e9e',
-  darkContrastDetail: '#808080',
+  midContrastDetail: '#57606A',
+  darkContrastDetail: '#E8EAED',
   /**
    * @type {string} Defines borders
    */
-  borderColor: '#eee',
-  borderColorMid: '#dcdcdc',
-  borderColorDark: '#cecece',
+  borderColor: '#24292F',
+  borderColorMid: '#21262D',
+  borderColorDark: '#191C21',
   /**
    * @type {string}
    * Maximum contrast with the background color, for better reading
    */
-  textColor: '#000',
+  textColor: '#FFFFFF',
   /**
    * @type {string} Washed down version of the text
    */
-  textColorShadow: 'rgba(0, 0, 0, 0.5)',
-  textColorShadowOpacity005: 'rgba(0, 0, 0, 0.05)',
-  textColorShadowLighter: 'rgba(0, 0, 0, 0.1)',
+  textColorShadow: 'rgba(255, 255, 255, 0.5)',
+  textColorShadowOpacity005: 'rgba(255, 255, 255, 0.05)',
+  textColorShadowLighter: 'rgba(255, 255, 255, 0.1)',
   /**
    * @type {string} More washed down version of the text
    */
-  textColorShadowLight: 'rgba(0, 0, 0, 0.3)',
-  textColorShadowOpacity06: 'rgba(0, 0, 0, 0.6)',
-  textColorShadowOpacity07: 'rgba(0, 0, 0, 0.7)',
-  textColorShadowDark: 'rgba(0, 0, 0, 0.8)',
-  textColorShadowOpacity09: 'rgba(0, 0, 0, 0.9)',
+  textColorShadowLight: 'rgba(255, 255, 255, 0.3)',
+  textColorShadowOpacity06: 'rgba(255, 255, 255, 0.6)',
+  textColorShadowOpacity07: 'rgba(255, 255, 255, 0.7)',
+  textColorShadowDark: 'rgba(255, 255, 255, 0.8)',
+  textColorShadowOpacity09: 'rgba(255, 255, 255, 0.9)',
   /**
    * @type {string} Specific for tab bar selectors
    */
-  tabBarBackground: '#333',
+  tabBarBackground: '#24292F',
+  /**
+   * @type {string} Card background color
+   */
+  card: '#24292F',
+  cardForeground: '#FFFFFF',
+  /**
+   * @type {string} Secondary background (darker than main)
+   */
+  secondary: '#191C21',
+  secondaryForeground: '#FFFFFF',
+  /**
+   * @type {string} Muted text and elements
+   */
+  muted: '#57606A',
+  mutedForeground: '#E8EAED',
+  /**
+   * @type {string} Accent color from web-wallet
+   */
+  accent: '#71A3DA',
+  accentForeground: '#FFFFFF',
+  /**
+   * @type {string} Neutral colors
+   */
+  neutral100: '#FFFFFF',
+  neutral500: '#57606A',
+  neutral700: '#21262D',
   /**
    * @type {string} Represents a positive feedback for the user
    */
-  positiveBalanceColor: '#0DA0A0',
+  positiveBalanceColor: '#71A3DA',
   /**
    * @type {string} For containers with error feedbacks
    */
@@ -68,15 +95,20 @@ export const COLORS = {
   /**
    * @type {string} For texts with error messages
    */
-  errorTextColor: '#F00',
+  errorTextColor: '#FF6B6B',
   /**
    * @type {string} Washed down version of error texts
    * */
-  errorTextShadow: `rgba(255, 0, 0, 0.7)`,
+  errorTextShadow: `rgba(255, 107, 107, 0.7)`,
   /**
    * @type {string} Primary color, as set on the application config file
+   * Matching web-wallet purple
    * */
   primary: PRIMARY_COLOR,
+  primary400: '#BA90FF',
+  primary500: PRIMARY_COLOR,
+  primary600: '#542A99',
+  primaryForeground: '#FFFFFF',
   /**
    * @type {string} Primary color washed down to 10% opacity
    */
@@ -85,20 +117,20 @@ export const COLORS = {
    * @type {string} Primary color washed down to 30% opacity
    */
   primaryOpacity30: `${PRIMARY_COLOR}4D`,
-  feedbackSuccess100: 'hsla(161, 30%, 85%, 1)',
-  feedbackSuccess400: 'hsla(159, 75%, 17%, 1)',
-  feedbackWarning100: 'hsla(21, 100%, 90%, 1)',
-  feedbackWarning300: 'hsla(21, 54%, 49%, 1)',
-  feedbackError200: 'hsla(7, 69%, 95%, 1)',
-  feedbackError600: 'hsla(7, 100%, 30%, 1)',
-  freeze100: 'hsla(0, 0%, 90%, 1)',
-  freeze300: 'hsla(0, 0%, 45%, 1)',
-  cardWarning100: 'hsla(46, 100%, 95%, 1)',
-  cardWarning200: 'hsla(46, 100%, 58%, 1)',
+  feedbackSuccess100: 'hsla(161, 30%, 25%, 1)',
+  feedbackSuccess400: 'hsla(159, 75%, 47%, 1)',
+  feedbackWarning100: 'hsla(21, 100%, 20%, 1)',
+  feedbackWarning300: 'hsla(21, 54%, 59%, 1)',
+  feedbackError200: 'hsla(7, 69%, 25%, 1)',
+  feedbackError600: 'hsla(7, 100%, 60%, 1)',
+  freeze100: 'hsla(0, 0%, 30%, 1)',
+  freeze300: 'hsla(0, 0%, 65%, 1)',
+  cardWarning100: 'hsla(46, 100%, 25%, 1)',
+  cardWarning200: 'hsla(46, 100%, 68%, 1)',
   /**
-   * @type {string} Black with 38% of light and full opaque
+   * @type {string} Light gray for labels in dark theme
    */
-  textLabel: 'hsla(0, 0%, 38%, 1)',
+  textLabel: 'hsla(0, 0%, 72%, 1)',
 };
 
 /**
@@ -126,12 +158,15 @@ export const STYLE = {
  */
 export const HathorTheme = {
   ...DefaultTheme,
-  dark: false,
+  dark: true,
   colors: {
     ...DefaultTheme.colors,
     background: COLORS.backgroundColor,
     text: COLORS.textColor,
     border: COLORS.borderColor,
+    card: COLORS.card,
+    primary: COLORS.primary,
+    notification: COLORS.primary,
   },
 };
 

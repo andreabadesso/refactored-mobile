@@ -10,6 +10,7 @@ import {
   StyleSheet,
   Text,
 } from 'react-native';
+import { COLORS } from '../styles/themes';
 import { commonStyles } from './Reown/theme';
 
 /**
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
   textValue: {
     fontSize: 14,
     lineHeight: 20,
-    color: 'black',
+    color: COLORS.textColor,
   },
   title: {
     fontSize: 18,

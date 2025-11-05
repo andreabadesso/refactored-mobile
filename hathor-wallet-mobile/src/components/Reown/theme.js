@@ -6,15 +6,15 @@ export const commonStyles = StyleSheet.create({
   card: {
     paddingVertical: 16,
     paddingHorizontal: 16,
-    backgroundColor: COLORS.backgroundColor,
+    backgroundColor: COLORS.card,
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
     borderBottomLeftRadius: 16,
     borderBottomRightRadius: 16,
     shadowOffset: { height: 2, width: 0 },
     shadowRadius: 4,
-    shadowColor: COLORS.textColor,
-    shadowOpacity: 0.08,
+    shadowColor: COLORS.black,
+    shadowOpacity: 0.3,
   },
   cardSplit: {
     flexDirection: 'row',
@@ -53,13 +53,13 @@ export const commonStyles = StyleSheet.create({
   text: {
     fontSize: 14,
     lineHeight: 20,
-    color: COLORS.black,
+    color: COLORS.textColor,
   },
   bold: {
     fontWeight: 'bold',
   },
   field: {
-    color: 'hsla(0, 0%, 38%, 1)',
+    color: COLORS.muted,
   },
   mb4: {
     marginBottom: 4,
@@ -71,7 +71,7 @@ export const commonStyles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     lineHeight: 20,
-    color: COLORS.black,
+    color: COLORS.textColor,
     marginBottom: 24,
   },
   // Modal styles
@@ -82,11 +82,12 @@ export const commonStyles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 8,
     paddingHorizontal: 16,
-    backgroundColor: COLORS.freeze100,
+    backgroundColor: COLORS.secondary,
   },
   modalTitle: {
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
+    color: COLORS.textColor,
   },
 });
