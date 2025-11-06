@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 24,
     paddingHorizontal: 16,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.card,
   },
   titleWrapper: {
     paddingBottom: 20,
   },
   title: {
-    color: 'black',
+    color: COLORS.textColor,
     fontSize: 18,
     lineHeight: 20,
   },

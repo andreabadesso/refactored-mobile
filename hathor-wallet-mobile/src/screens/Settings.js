@@ -102,7 +102,7 @@ export class Settings extends React.Component {
           {(this.props.isOnline
             && (
               <View style={this.style.networkContainerView}>
-                <Text>{t`You are connected to`}</Text>
+                <Text style={{ color: COLORS.textColor }}>{t`You are connected to`}</Text>
                 <View style={this.style.networkView}>
                   <Text style={this.style.networkText}>{this.props.network}</Text>
                 </View>
@@ -116,7 +116,7 @@ export class Settings extends React.Component {
                 <View style={{ flex: 1 }}>
                   <Text style={{ marginBottom: 8, color: COLORS.textColorShadow, fontSize: 12 }}>{t`Connected to`}</Text>
                   <Text
-                    style={{ fontSize: 12 }}
+                    style={{ fontSize: 12, color: COLORS.textColor }}
                     adjustsFontSizeToFit
                     minimumFontScale={0.5}
                   >

@@ -61,23 +61,24 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 24,
-    backgroundColor: 'hsla(220, 10%, 94%, 1)',
+    backgroundColor: COLORS.lowContrastDetail,
   },
   button: {
     width: '50%',
     borderRadius: 24,
     paddingVertical: 12,
-    color: COLORS.textColor,
   },
   buttonFocus: {
-    backgroundColor: COLORS.backgroundColor,
+    backgroundColor: COLORS.card,
   },
   text: {
     fontSize: 14,
     lineHeight: 20,
     textAlign: 'center',
+    color: COLORS.muted,
   },
   textFocus: {
     fontWeight: 'bold',
+    color: COLORS.textColor,
   }
 });

@@ -32,7 +32,7 @@ class TxDetailsModal extends Component {
     inner: {
       borderRadius: 8,
       paddingBottom: 24,
-      backgroundColor: COLORS.backgroundColor,
+      backgroundColor: COLORS.card,
       maxHeight: '80%',
     },
   });
@@ -133,6 +133,7 @@ class BalanceView extends Component {
     balance: {
       fontSize: 32,
       fontWeight: 'bold',
+      color: COLORS.textColor,
     },
     text1: {
       paddingTop: 8,

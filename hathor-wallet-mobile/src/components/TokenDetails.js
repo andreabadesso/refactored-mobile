@@ -42,7 +42,7 @@ const TokenDetails = (props) => {
   return (
     <View style={[styles.contentWrapper, props.contentStyle]}>
       <View style={styles.tokenWrapper}>
-        <Text style={{ fontSize: 14, lineHeight: 17, fontWeight: 'bold' }}>{tokenLabel} {renderNFTType()}</Text>
+        <Text style={{ fontSize: 14, lineHeight: 17, fontWeight: 'bold', color: COLORS.textColor }}>{tokenLabel} {renderNFTType()}</Text>
       </View>
       <View style={styles.qrcodeWrapper}>
         <QRCode

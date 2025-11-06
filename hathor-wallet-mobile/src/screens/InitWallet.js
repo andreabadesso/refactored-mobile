@@ -47,6 +47,7 @@ class WelcomeScreen extends React.Component {
         fontSize: 14,
         lineHeight: 18,
         flex: 1,
+        color: COLORS.textColor,
       },
     }) });
 

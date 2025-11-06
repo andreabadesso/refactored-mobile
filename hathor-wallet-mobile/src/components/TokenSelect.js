@@ -142,6 +142,7 @@ const styles = StyleSheet.create({
   },
   text: {
     lineHeight: 20,
+    color: COLORS.textColor,
   },
   rightText: {
     fontSize: 16,

@@ -35,11 +35,7 @@ export class HathorList extends Component {
       alignSelf: 'flex-start',
       paddingHorizontal: 32,
       fontSize: 14,
-      // HSL is preferable than RGB because it allows an
-      // easier manipulation in arithmetic fashion.
-      // The following color is Black with 55% of light,
-      // which yields a tone of grey.
-      color: 'hsl(0, 0%, 55%)',
+      color: COLORS.muted,
     },
     infinityView: {
       flex: 1,
@@ -92,7 +88,7 @@ class BaseItem extends Component {
     },
     view: {
       flexDirection: 'row',
-      backgroundColor: COLORS.backgroundColor,
+      backgroundColor: COLORS.card,
       alignItems: 'center',
       height: 64,
       paddingLeft: 16,
@@ -101,9 +97,11 @@ class BaseItem extends Component {
     title: {
       flex: 1,
       fontSize: 14,
+      color: COLORS.textColor,
     },
     text: {
       fontSize: 16,
+      color: COLORS.textColor,
     },
   });
 

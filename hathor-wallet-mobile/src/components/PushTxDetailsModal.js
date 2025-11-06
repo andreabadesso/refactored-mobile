@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   },
   wrapperView: {
     paddingTop: 16,
-    backgroundColor: COLORS.backgroundColor,
+    backgroundColor: COLORS.card,
     borderRadius: 8,
   },
 });
@@ -70,7 +70,7 @@ export default function PushTxDetailsModal(props) {
             title={getTokenTitle(token)}
             titleStyle={token.isRegistered && styles.registeredToken}
             button={(
-              <Text>{getTokenBalance(token, isTokenNFT(token.uid, tokenMetadata))}</Text>
+              <Text style={{ color: COLORS.textColor }}>{getTokenBalance(token, isTokenNFT(token.uid, tokenMetadata))}</Text>
             )}
           />
         ))}
@@ -93,6 +93,7 @@ const styleModalTitle = StyleSheet.create({
   text1: {
     fontSize: 18,
     paddingTop: 8,
+    color: COLORS.textColor,
   },
 });
 

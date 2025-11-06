@@ -83,6 +83,7 @@ CopyClipboard.propTypes = {
 const style = StyleSheet.create({
   text: {
     fontSize: 12,
+    color: COLORS.textColor,
   },
   copied: {
     color: COLORS.primary,

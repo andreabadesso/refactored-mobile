@@ -108,12 +108,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingBottom: 16,
     textAlign: 'center',
+    color: COLORS.textColor,
   },
   message: {
     fontSize: 14,
     lineHeight: 20,
     paddingBottom: 16,
     textAlign: 'center',
+    color: COLORS.textColor,
   },
   icon: {
     paddingBottom: 16,

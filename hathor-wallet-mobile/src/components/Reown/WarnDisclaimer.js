@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
   warnMessage: {
     fontSize: 12,
     lineHeight: 16,
+    color: COLORS.textColor,
   },
   learnMoreWrapper: {
     display: 'inline-block',
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 16,
     fontWeight: 'bold',
-    color: 'hsla(0, 0%, 25%, 1)',
+    color: COLORS.textColor,
     textAlign: 'left',
     textDecorationLine: 'underline',
   },

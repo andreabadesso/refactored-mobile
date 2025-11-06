@@ -122,10 +122,12 @@ const style = StyleSheet.create({
   numberStyle: {
     fontSize: 25,
     lineHeight: 28,
+    color: COLORS.textColor,
   },
   charStyle: {
     fontSize: 10,
     lineHeight: 12,
+    color: COLORS.muted,
   },
 });
 

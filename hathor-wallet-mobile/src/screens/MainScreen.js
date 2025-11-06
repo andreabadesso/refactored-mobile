@@ -322,11 +322,13 @@ class TxListItem extends React.Component {
     balance: {
       fontSize: 16,
       marginRight: 16,
+      color: COLORS.textColor,
     },
     description: {
       fontSize: 14,
       lineHeight: 20,
       fontWeight: 'bold',
+      color: COLORS.textColor,
     },
     secondaryText: {
       fontSize: 12,
