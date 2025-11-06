@@ -37,7 +37,7 @@ class CreateTokenDetail extends React.Component {
     );
 
     return (
-      <View style={{ flex: 1, backgroundColor: COLORS.lowContrastDetail }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`TOKEN DETAILS`}
           wrapperStyle={{ borderBottomWidth: 0 }}

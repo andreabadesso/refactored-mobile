@@ -78,7 +78,7 @@ const UnifiedQRScanner = ({ navigation }) => {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lowContrastDetail }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <HathorHeader
         title={t`Scan QR Code`}
         wrapperStyle={{ borderBottomWidth: 0 }}

@@ -40,7 +40,7 @@ const hasApiStatusFailed = (pushNotification) => {
 const styles = StyleSheet.create({
   view: {
     flex: 1,
-    backgroundColor: COLORS.lowContrastDetail,
+    backgroundColor: COLORS.backgroundColor,
   },
   feedbackModalIcon: {
     height: 105,

@@ -98,7 +98,7 @@ class PaymentRequestDetail extends React.Component {
     );
 
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.backgroundColor }}>
         {renderPaymentConfirm()}
         <HathorHeader
           withBorder

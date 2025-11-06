@@ -19,6 +19,7 @@ import HathorHeader from '../components/HathorHeader';
 import baseStyle from '../styles/init';
 import { Link, str2jsx } from '../utils';
 import { TOKEN_DEPOSIT_URL } from '../constants';
+import { COLORS } from '../styles/themes';
 
 const mapStateToProps = (state) => ({
   wallet: state.wallet,
@@ -37,7 +38,7 @@ class CreateTokenDepositNotice extends React.Component {
   render() {
     const depositPercentage = this.props.wallet.storage.getTokenDepositPercentage() * 100;
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`CREATE TOKEN`}
           onBackPress={() => this.props.navigation.pop()}

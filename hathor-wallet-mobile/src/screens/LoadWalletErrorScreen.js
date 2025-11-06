@@ -22,6 +22,7 @@ import {
 } from '../actions';
 import SimpleButton from '../components/SimpleButton';
 import { PRE_SETTINGS_MAINNET } from '../constants';
+import { COLORS } from '../styles/themes';
 
 const errorText = t`There's been an error connecting to the server.`;
 const tryAgainText = t`Try again`;
@@ -31,6 +32,7 @@ const onConnectToMainnetText = t`Connect to mainnet`;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: COLORS.backgroundColor,
   },
   content: {
     flex: 1,

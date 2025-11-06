@@ -100,7 +100,7 @@ const RegisterOptionsScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.backgroundColor,
   },
   content: {
     flex: 1,
@@ -114,9 +114,6 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     gap: 16,
-  },
-  button: {
-    backgroundColor: COLORS.black,
   },
 });
 
