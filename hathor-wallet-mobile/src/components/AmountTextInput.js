@@ -122,13 +122,13 @@ const AmountTextInput = forwardRef((props, ref) => {
 
 const style = StyleSheet.create({
   input: {
-    height: 64,
-    lineHeight: 64,
-    fontSize: 52,
+    height: 72,
+    lineHeight: 72,
+    fontSize: 56,
     fontWeight: 'bold',
     paddingVertical: 0,
     color: COLORS.textColor,
-    letterSpacing: -2,
+    letterSpacing: -2.5,
   },
 });
 

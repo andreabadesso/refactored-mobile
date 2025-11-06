@@ -19,11 +19,11 @@ const InputLabel = (props) => (
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 13,
-    lineHeight: 18,
+    fontSize: 14,
+    lineHeight: 20,
     fontWeight: '600',
-    color: COLORS.textSecondary,
-    letterSpacing: 0.3,
+    color: COLORS.textColor,
+    letterSpacing: 0.2,
   },
 });
 

@@ -137,13 +137,15 @@ const SendAmountInput = () => {
           onBackPress={() => navigation.goBack()}
         />
         <KeyboardAvoidingView behavior='padding' style={{ flex: 1 }} keyboardVerticalOffset={getStatusBarHeight()}>
-          <View style={{ flex: 1, padding: 16, justifyContent: 'space-between' }}>
+          <View style={{ flex: 1, paddingHorizontal: 24, paddingTop: 32, justifyContent: 'space-between' }}>
             <View>
+              <InputLabel style={{ textAlign: 'center', marginBottom: 24, fontSize: 13, color: COLORS.textSecondary }}>
+                {t`Enter amount to send`}
+              </InputLabel>
               <View style={{
-                flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 64,
+                flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginTop: 20, marginBottom: 24,
               }}
               >
-                {renderGhostElement()}
                 <AmountTextInput
                   ref={inputRef}
                   autoFocus
@@ -151,18 +153,34 @@ const SendAmountInput = () => {
                   value={amount}
                   allowOnlyInteger={isNFT()}
                   decimalPlaces={decimalPlaces}
-                  style={{ flex: 1 }} // we need this so the placeholder doesn't break in android
-                // devices after erasing the text
-                // https://github.com/facebook/react-native/issues/30666
+                  style={{ flex: 1, maxWidth: 400 }}
                 />
-                {IS_MULTI_TOKEN
-                  ? <TokenBox onPress={onTokenBoxPress} label={token.symbol} />
-                  : renderGhostElement()}
+                {IS_MULTI_TOKEN && (
+                  <TokenBox onPress={onTokenBoxPress} label={token.symbol} style={{ marginLeft: 16 }} />
+                )}
               </View>
-              <InputLabel style={{ textAlign: 'center', marginTop: 16, fontSize: 16 }}>
-                {getAvailableString()}
-              </InputLabel>
-              <Text style={styles.error}>{error}</Text>
+              <View style={{
+                backgroundColor: COLORS.card,
+                borderRadius: 16,
+                paddingVertical: 20,
+                paddingHorizontal: 24,
+                marginTop: 16,
+                borderWidth: 1,
+                borderColor: COLORS.borderColor,
+                shadowColor: COLORS.shadowDark,
+                shadowOffset: { width: 0, height: 2 },
+                shadowOpacity: 0.15,
+                shadowRadius: 8,
+                elevation: 2,
+              }}>
+                <Text style={{ textAlign: 'center', fontSize: 14, color: COLORS.textSecondary, marginBottom: 4 }}>
+                  {t`Available Balance`}
+                </Text>
+                <Text style={{ textAlign: 'center', fontSize: 20, fontWeight: 'bold', color: COLORS.textColor }}>
+                  {getAvailableString()}
+                </Text>
+              </View>
+              {error && <Text style={styles.error}>{error}</Text>}
             </View>
             <NewHathorButton
               title={t`Next`}
@@ -180,10 +198,15 @@ const SendAmountInput = () => {
 const styles = StyleSheet.create({
   error: {
     marginTop: 20,
-    fontSize: 14,
-    fontWeight: 'bold',
+    fontSize: 15,
+    fontWeight: '600',
     textAlign: 'center',
     color: COLORS.error,
+    backgroundColor: COLORS.errorBg,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    overflow: 'hidden',
   },
 });
 
