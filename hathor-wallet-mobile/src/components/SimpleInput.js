@@ -71,30 +71,33 @@ const SimpleInput = (props) => {
 const styles = StyleSheet.create({
   inputContainer: {
     borderBottomWidth: 2,
-    borderColor: COLORS.borderGlow,
-    paddingBottom: 12,
+    borderColor: COLORS.primary,
+    paddingBottom: 14,
   },
   input: {
-    lineHeight: 20,
+    lineHeight: 24,
     padding: 0,
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: '500',
     color: COLORS.textColor,
   },
   text: {
     color: COLORS.textColor,
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: '500',
   },
   label: {
-    marginBottom: 12,
+    marginBottom: 16,
   },
   auxiliarText: {
-    marginTop: 10,
-    fontSize: 13,
+    marginTop: 12,
+    fontSize: 14,
+    lineHeight: 20,
     color: COLORS.textSecondary,
   },
   error: {
     color: COLORS.error,
-    fontWeight: '500',
+    fontWeight: '600',
   },
 });
 

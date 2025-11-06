@@ -14,14 +14,22 @@ const HathorTextInput = (props) => (
     {...props}
     style={[{
       width: 100,
-      padding: 8,
-      borderRadius: 4,
-      borderColor: COLORS.borderColorMid,
-      borderWidth: 1,
+      paddingVertical: 14,
+      paddingHorizontal: 16,
+      borderRadius: 12,
+      borderColor: COLORS.borderColor,
+      borderWidth: 1.5,
       color: COLORS.textColor,
       backgroundColor: COLORS.card,
+      fontSize: 16,
+      fontWeight: '500',
+      shadowColor: COLORS.shadowDark,
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.2,
+      shadowRadius: 6,
+      elevation: 3,
     }, props.style]}
-    placeholderTextColor={COLORS.muted}
+    placeholderTextColor={COLORS.textSecondary}
     keyboardAppearance='dark'
   />
 );
