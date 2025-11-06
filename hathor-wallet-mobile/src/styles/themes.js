@@ -10,9 +10,9 @@ import { _PRIMARY_COLOR as PRIMARY_COLOR } from '../config';
 import { HslColor } from '../HslColor';
 
 /**
- * FUTURISTIC GRADIENT THEME 🚀
- * Bold, Vibrant, Absolutely Gorgeous
- * Inspired by: Phantom Wallet, Stripe, Linear, Vercel
+ * BEAUTIFUL MODERN LIGHT THEME 🌈✨
+ * Clean, Vibrant, Absolutely Stunning
+ * Inspired by: Stripe, Revolut, N26, Cash App
  */
 export const COLORS = {
   // Base colors
@@ -20,44 +20,44 @@ export const COLORS = {
   black: '#000000',
 
   // === BACKGROUNDS ===
-  // Deep space gradient
-  backgroundColor: '#0B0D17', // Deep midnight blue
-  backgroundGradientStart: '#0B0D17',
-  backgroundGradientMiddle: '#1A1625', // Deep purple tint
-  backgroundGradientEnd: '#0F1419',
+  // Clean, bright, airy
+  backgroundColor: '#F8F9FC', // Soft blue-gray background
+  backgroundGradientStart: '#FFFFFF',
+  backgroundGradientMiddle: '#F8F9FC',
+  backgroundGradientEnd: '#F0F2F8',
 
   // === CARDS & SURFACES ===
-  // Floating glass cards
-  card: '#1C1F2E',
-  cardGlass: 'rgba(28, 31, 46, 0.5)',
-  cardElevated: '#252A3E',
-  cardHover: '#2D334A',
+  // Pure white floating cards
+  card: '#FFFFFF',
+  cardGlass: 'rgba(255, 255, 255, 0.95)',
+  cardElevated: '#FFFFFF',
+  cardHover: '#FAFBFC',
 
-  // === PRIMARY GRADIENT (Neon Purple to Pink) ===
-  primary: '#A855F7', // Bright purple
-  primaryLight: '#C084FC', // Lighter purple
-  primaryDark: '#9333EA',
-  primaryPink: '#EC4899', // Hot pink for gradient
-  primaryCyan: '#06B6D4', // Cyan accent
-  primary400: '#C084FC',
-  primary500: '#A855F7',
-  primary600: '#9333EA',
+  // === PRIMARY GRADIENT (Beautiful Purple to Pink) ===
+  primary: '#8B5CF6', // Rich vibrant purple
+  primaryLight: '#A78BFA', // Soft lavender
+  primaryDark: '#7C3AED',
+  primaryPink: '#EC4899', // Hot pink
+  primaryCyan: '#06B6D4', // Bright cyan
+  primary400: '#A78BFA',
+  primary500: '#8B5CF6',
+  primary600: '#7C3AED',
   primaryForeground: '#FFFFFF',
-  primaryGlow: 'rgba(168, 85, 247, 0.5)',
-  primaryOpacity10: 'rgba(168, 85, 247, 0.1)',
-  primaryOpacity20: 'rgba(168, 85, 247, 0.2)',
-  primaryOpacity30: 'rgba(168, 85, 247, 0.3)',
+  primaryGlow: 'rgba(139, 92, 246, 0.25)',
+  primaryOpacity10: 'rgba(139, 92, 246, 0.08)',
+  primaryOpacity20: 'rgba(139, 92, 246, 0.12)',
+  primaryOpacity30: 'rgba(139, 92, 246, 0.18)',
 
   // === ACCENT GRADIENT (Cyan to Blue) ===
-  accent: '#06B6D4', // Bright cyan
+  accent: '#06B6D4', // Vibrant cyan
   accentLight: '#22D3EE',
   accentDark: '#0891B2',
-  accentBlue: '#3B82F6', // Royal blue
+  accentBlue: '#3B82F6', // Beautiful blue
   accentForeground: '#FFFFFF',
-  accentGlow: 'rgba(6, 182, 212, 0.5)',
+  accentGlow: 'rgba(6, 182, 212, 0.25)',
 
-  // === NEON COLORS ===
-  neonPurple: '#A855F7',
+  // === VIBRANT COLORS ===
+  neonPurple: '#8B5CF6',
   neonPink: '#EC4899',
   neonCyan: '#06B6D4',
   neonGreen: '#10B981',
@@ -65,97 +65,97 @@ export const COLORS = {
   neonRed: '#EF4444',
 
   // === TEXT COLORS ===
-  textColor: '#FFFFFF',
-  textSecondary: '#A1A1AA', // Neutral gray
-  textMuted: '#71717A', // Darker gray
-  textLabel: '#A1A1AA',
-  textGlow: 'rgba(255, 255, 255, 0.9)',
+  textColor: '#1E293B', // Rich dark slate
+  textSecondary: '#64748B', // Medium slate
+  textMuted: '#94A3B8', // Light slate
+  textLabel: '#64748B',
+  textGlow: 'rgba(30, 41, 59, 0.95)',
 
-  // Better text shadows
-  textColorShadow: 'rgba(255, 255, 255, 0.7)',
-  textColorShadowOpacity005: 'rgba(255, 255, 255, 0.05)',
-  textColorShadowLighter: 'rgba(255, 255, 255, 0.2)',
-  textColorShadowLight: 'rgba(255, 255, 255, 0.5)',
-  textColorShadowOpacity06: 'rgba(255, 255, 255, 0.7)',
-  textColorShadowOpacity07: 'rgba(255, 255, 255, 0.8)',
-  textColorShadowDark: 'rgba(255, 255, 255, 0.9)',
-  textColorShadowOpacity09: 'rgba(255, 255, 255, 0.95)',
+  // Text shadow variations
+  textColorShadow: 'rgba(30, 41, 59, 0.8)',
+  textColorShadowOpacity005: 'rgba(30, 41, 59, 0.05)',
+  textColorShadowLighter: 'rgba(30, 41, 59, 0.3)',
+  textColorShadowLight: 'rgba(30, 41, 59, 0.5)',
+  textColorShadowOpacity06: 'rgba(30, 41, 59, 0.7)',
+  textColorShadowOpacity07: 'rgba(30, 41, 59, 0.8)',
+  textColorShadowDark: 'rgba(30, 41, 59, 0.9)',
+  textColorShadowOpacity09: 'rgba(30, 41, 59, 0.95)',
 
   // === BORDERS ===
-  borderColor: 'rgba(168, 85, 247, 0.15)', // Subtle purple
-  borderColorMid: 'rgba(168, 85, 247, 0.1)',
-  borderColorDark: 'rgba(255, 255, 255, 0.05)',
-  borderGlow: 'rgba(168, 85, 247, 0.4)', // Purple glow
-  borderNeon: 'rgba(168, 85, 247, 0.6)', // Bright purple
+  borderColor: 'rgba(226, 232, 240, 1)', // Clean light border
+  borderColorMid: 'rgba(241, 245, 249, 1)',
+  borderColorDark: 'rgba(203, 213, 225, 1)',
+  borderGlow: 'rgba(139, 92, 246, 0.2)', // Subtle purple tint
+  borderNeon: 'rgba(139, 92, 246, 0.35)', // Vibrant purple border
 
-  // === SUCCESS (Neon Emerald) ===
+  // === SUCCESS (Fresh Green) ===
   success: '#10B981',
   successLight: '#34D399',
   successDark: '#059669',
-  successBg: 'rgba(16, 185, 129, 0.12)',
-  successGlow: 'rgba(16, 185, 129, 0.4)',
-  feedbackSuccess100: 'rgba(16, 185, 129, 0.12)',
+  successBg: 'rgba(16, 185, 129, 0.1)',
+  successGlow: 'rgba(16, 185, 129, 0.25)',
+  feedbackSuccess100: 'rgba(16, 185, 129, 0.1)',
   feedbackSuccess400: '#10B981',
 
-  // === WARNING (Neon Amber) ===
+  // === WARNING (Warm Orange) ===
   warning: '#F59E0B',
   warningLight: '#FCD34D',
   warningDark: '#D97706',
-  warningBg: 'rgba(245, 158, 11, 0.12)',
-  warningGlow: 'rgba(245, 158, 11, 0.4)',
-  feedbackWarning100: 'rgba(245, 158, 11, 0.12)',
+  warningBg: 'rgba(245, 158, 11, 0.1)',
+  warningGlow: 'rgba(245, 158, 11, 0.25)',
+  feedbackWarning100: 'rgba(245, 158, 11, 0.1)',
   feedbackWarning300: '#F59E0B',
 
-  // === ERROR (Neon Red) ===
+  // === ERROR (Vibrant Red) ===
   error: '#EF4444',
   errorLight: '#F87171',
   errorDark: '#DC2626',
-  errorBg: 'rgba(239, 68, 68, 0.12)',
-  errorGlow: 'rgba(239, 68, 68, 0.4)',
-  errorBgColor: '#EF4444',
-  errorTextColor: '#FCA5A5',
-  errorTextShadow: 'rgba(252, 165, 165, 0.7)',
-  feedbackError200: 'rgba(239, 68, 68, 0.12)',
+  errorBg: 'rgba(239, 68, 68, 0.1)',
+  errorGlow: 'rgba(239, 68, 68, 0.25)',
+  errorBgColor: '#FEE2E2',
+  errorTextColor: '#DC2626',
+  errorTextShadow: 'rgba(220, 38, 38, 0.7)',
+  feedbackError200: 'rgba(239, 68, 68, 0.1)',
   feedbackError600: '#EF4444',
 
-  // === BALANCE/POSITIVE (Neon Cyan) ===
+  // === BALANCE/POSITIVE (Vibrant Cyan) ===
   positiveBalanceColor: '#06B6D4',
 
   // === FREEZE/INACTIVE ===
-  freeze100: 'rgba(113, 113, 122, 0.15)',
-  freeze300: '#71717A',
+  freeze100: 'rgba(148, 163, 184, 0.15)',
+  freeze300: '#94A3B8',
 
   // === CARD WARNINGS ===
-  cardWarning100: 'rgba(245, 158, 11, 0.12)',
+  cardWarning100: 'rgba(245, 158, 11, 0.1)',
   cardWarning200: '#FBBF24',
 
   // === COMPONENT SPECIFIC ===
-  tabBarBackground: '#1C1F2E',
-  cardForeground: '#FFFFFF',
-  secondary: '#252A3E',
-  secondaryForeground: '#FFFFFF',
+  tabBarBackground: '#FFFFFF',
+  cardForeground: '#1E293B',
+  secondary: '#F1F5F9',
+  secondaryForeground: '#1E293B',
 
   // Muted variations
-  muted: '#71717A',
-  mutedForeground: '#D4D4D8',
-  lowContrastDetail: '#252A3E',
-  midContrastDetail: '#71717A',
-  darkContrastDetail: '#D4D4D8',
+  muted: '#94A3B8',
+  mutedForeground: '#475569',
+  lowContrastDetail: '#F8FAFC',
+  midContrastDetail: '#E2E8F0',
+  darkContrastDetail: '#CBD5E1',
 
-  // Neutral scale (Zinc)
-  neutral100: '#FFFFFF',
-  neutral200: '#E4E4E7',
-  neutral300: '#D4D4D8',
-  neutral400: '#A1A1AA',
-  neutral500: '#71717A',
-  neutral600: '#52525B',
-  neutral700: '#3F3F46',
-  neutral800: '#27272A',
-  neutral900: '#18181B',
+  // Neutral scale (Slate - beautiful grays)
+  neutral100: '#F8FAFC',
+  neutral200: '#F1F5F9',
+  neutral300: '#E2E8F0',
+  neutral400: '#CBD5E1',
+  neutral500: '#94A3B8',
+  neutral600: '#64748B',
+  neutral700: '#475569',
+  neutral800: '#334155',
+  neutral900: '#1E293B',
 
   // === GRADIENTS ===
   // Primary gradient (Purple to Pink)
-  gradientPurplePink: ['#A855F7', '#EC4899'],
+  gradientPurplePink: ['#8B5CF6', '#EC4899'],
   gradientPurplePinkPositions: [0, 1],
 
   // Accent gradient (Cyan to Blue)
@@ -170,17 +170,17 @@ export const COLORS = {
   // Warning gradient
   gradientOrange: ['#F59E0B', '#FCD34D'],
 
-  // Background gradient (for screens)
-  gradientBackground: ['#0B0D17', '#1A1625', '#0F1419'],
+  // Background gradient (soft and clean)
+  gradientBackground: ['#FFFFFF', '#F8F9FC', '#F0F2F8'],
   gradientBackgroundPositions: [0, 0.5, 1],
 
   // === SHADOWS ===
-  shadowPrimary: 'rgba(168, 85, 247, 0.4)',
-  shadowPrimaryStrong: 'rgba(168, 85, 247, 0.6)',
-  shadowAccent: 'rgba(6, 182, 212, 0.4)',
-  shadowDark: 'rgba(0, 0, 0, 0.6)',
-  shadowDarkStrong: 'rgba(0, 0, 0, 0.8)',
-  shadowGlow: 'rgba(168, 85, 247, 0.3)',
+  shadowPrimary: 'rgba(139, 92, 246, 0.15)',
+  shadowPrimaryStrong: 'rgba(139, 92, 246, 0.25)',
+  shadowAccent: 'rgba(6, 182, 212, 0.15)',
+  shadowDark: 'rgba(15, 23, 42, 0.08)',
+  shadowDarkStrong: 'rgba(15, 23, 42, 0.12)',
+  shadowGlow: 'rgba(139, 92, 246, 0.2)',
 };
 
 /**
@@ -208,7 +208,7 @@ export const STYLE = {
  */
 export const HathorTheme = {
   ...DefaultTheme,
-  dark: true,
+  dark: false,
   colors: {
     ...DefaultTheme.colors,
     background: COLORS.backgroundColor,
