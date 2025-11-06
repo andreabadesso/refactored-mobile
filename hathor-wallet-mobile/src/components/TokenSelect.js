@@ -110,7 +110,7 @@ const TokenSelect = (props) => {
 };
 
 const ItemSeparator = () => (
-  <View style={{ height: 12 }} />
+  <View style={{ height: 16 }} />
 );
 
 const styles = StyleSheet.create({
@@ -119,25 +119,25 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: COLORS.backgroundColor,
-    paddingTop: 8,
+    paddingTop: 16,
   },
   itemWrapper: {
-    minHeight: 96,
-    marginHorizontal: 16,
-    paddingHorizontal: 20,
-    paddingVertical: 20,
+    minHeight: 104,
+    marginHorizontal: 20,
+    paddingHorizontal: 24,
+    paddingVertical: 24,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: COLORS.card,
-    borderRadius: 20,
+    backgroundColor: COLORS.white,
+    borderRadius: 24,
     borderWidth: 1,
     borderColor: COLORS.borderColor,
     shadowColor: COLORS.shadowDark,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.4,
-    shadowRadius: 12,
-    elevation: 6,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.06,
+    shadowRadius: 16,
+    elevation: 2,
   },
   itemLeftWrapper: {
     flexDirection: 'row',
@@ -145,32 +145,32 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   symbolWrapper: {
-    width: 52,
-    height: 52,
-    backgroundColor: COLORS.primaryOpacity20,
+    width: 56,
+    height: 56,
+    backgroundColor: COLORS.primaryOpacity10,
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 16,
-    borderRadius: 16,
-    borderWidth: 1.5,
-    borderColor: COLORS.borderColor,
+    borderRadius: 18,
   },
   text: {
-    lineHeight: 22,
+    lineHeight: 24,
     color: COLORS.textColor,
   },
   rightText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    letterSpacing: -0.5,
+    fontSize: 19,
+    fontWeight: '700',
+    letterSpacing: -0.3,
+    color: COLORS.textColor,
   },
   leftText: {
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: '600',
+    color: COLORS.textColor,
   },
   symbolText: {
-    fontWeight: 'bold',
-    fontSize: 18,
+    fontWeight: '800',
+    fontSize: 20,
     color: COLORS.primary,
   },
   symbolTextSelected: {
@@ -178,12 +178,11 @@ const styles = StyleSheet.create({
   },
   symbolWrapperSelected: {
     backgroundColor: COLORS.primary,
-    borderColor: COLORS.primary,
-    shadowColor: COLORS.shadowPrimaryStrong,
+    shadowColor: COLORS.primary,
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.6,
+    shadowOpacity: 0.3,
     shadowRadius: 12,
-    elevation: 8,
+    elevation: 6,
   },
 });
 
