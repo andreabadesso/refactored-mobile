@@ -30,10 +30,17 @@ class TxDetailsModal extends Component {
       paddingTop: 96,
     },
     inner: {
-      borderRadius: 8,
+      borderRadius: 24,
       paddingBottom: 24,
       backgroundColor: COLORS.card,
       maxHeight: '80%',
+      shadowColor: COLORS.shadowPrimary,
+      shadowOffset: { width: 0, height: 12 },
+      shadowOpacity: 0.7,
+      shadowRadius: 32,
+      elevation: 16,
+      borderWidth: 1,
+      borderColor: COLORS.borderGlow,
     },
   });
 
@@ -131,15 +138,18 @@ class BalanceView extends Component {
       paddingRight: 54,
     },
     balance: {
-      fontSize: 32,
+      fontSize: 36,
       fontWeight: 'bold',
       color: COLORS.textColor,
+      letterSpacing: -1,
     },
     text1: {
       paddingTop: 8,
-      fontSize: 12,
-      fontWeight: 'bold',
-      color: COLORS.textColorShadow,
+      fontSize: 13,
+      fontWeight: '700',
+      color: COLORS.textSecondary,
+      textTransform: 'uppercase',
+      letterSpacing: 1.2,
     },
   });
 

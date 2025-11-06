@@ -112,7 +112,7 @@ const CentralComponent = ({ title, withLogo }) => {
       />
     );
   }
-  return <Text>{title}</Text>;
+  return <Text style={styles.title}>{title}</Text>;
 };
 
 const RightComponent = ({ rightElement, onCancel }) => {
@@ -156,6 +156,12 @@ const styles = StyleSheet.create({
   centralComponentLogo: {
     height: 22,
     width: 100,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: COLORS.textColor,
+    letterSpacing: -0.5,
   },
 });
 

@@ -30,20 +30,26 @@ const TokenBox = (props) => (
 const styles = StyleSheet.create({
   wrapper: {
     alignItems: 'center',
-    height: 40,
-    width: 80,
-    borderWidth: 1,
-    borderColor: COLORS.textColor,
-    borderRadius: 8,
+    height: 44,
+    width: 88,
+    borderWidth: 2,
+    borderColor: COLORS.borderNeon,
+    borderRadius: 12,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 8,
+    padding: 10,
+    backgroundColor: 'rgba(168, 85, 247, 0.08)',
+    shadowColor: COLORS.shadowPrimary,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 4,
   },
   label: {
     fontSize: 16,
     fontWeight: 'bold',
     lineHeight: 19,
-    color: COLORS.textColor,
+    color: COLORS.primary,
   },
 });
 
