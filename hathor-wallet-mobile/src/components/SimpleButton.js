@@ -8,7 +8,7 @@ import React from 'react';
 import {
   Image, StyleSheet, Text, TouchableOpacity, View,
 } from 'react-native';
-import { PRIMARY_COLOR } from '../constants';
+import { COLORS } from '../styles/themes';
 /**
  * Simple button component.
  *
@@ -98,7 +98,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     lineHeight: 24,
-    color: PRIMARY_COLOR,
+    fontWeight: '600',
+    color: COLORS.primary,
     textAlign: 'center',
   },
   icon: {

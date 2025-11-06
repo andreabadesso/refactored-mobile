@@ -32,13 +32,15 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 14,
     lineHeight: 24,
-    color: COLORS.textColorShadow,
+    color: COLORS.textSecondary,
   },
   wrapper: {
     marginVertical: 16,
-    padding: 16,
-    backgroundColor: COLORS.lowContrastDetail,
-    borderRadius: 8,
+    padding: 20,
+    backgroundColor: COLORS.neutral100,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
   },
 });
 
