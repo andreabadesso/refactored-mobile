@@ -34,11 +34,20 @@ const HathorModal = (props) => (
 const styles = StyleSheet.create({
   view: {
     backgroundColor: COLORS.card,
-    borderRadius: 16,
-    paddingBottom: 24,
-    paddingTop: 42,
-    minHeight: 290,
+    borderRadius: 28,
+    paddingBottom: 32,
+    paddingTop: 48,
+    minHeight: 300,
     alignItems: 'center',
+    // DRAMATIC elevated shadow with purple glow
+    shadowColor: COLORS.shadowPrimary,
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.8,
+    shadowRadius: 32,
+    elevation: 20,
+    // Purple neon border glow
+    borderWidth: 1,
+    borderColor: COLORS.borderGlow,
   },
   innerView: {
     width: '100%',

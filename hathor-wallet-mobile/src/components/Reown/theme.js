@@ -4,17 +4,17 @@ import { COLORS } from '../../styles/themes';
 export const commonStyles = StyleSheet.create({
   // Card
   card: {
-    paddingVertical: 20,
-    paddingHorizontal: 20,
+    paddingVertical: 24,
+    paddingHorizontal: 24,
     backgroundColor: COLORS.card,
-    borderRadius: 16,
-    shadowOffset: { height: 4, width: 0 },
-    shadowRadius: 12,
-    shadowColor: COLORS.shadowDark,
-    shadowOpacity: 0.4,
-    elevation: 6,
+    borderRadius: 20,
+    shadowOffset: { height: 8, width: 0 },
+    shadowRadius: 20,
+    shadowColor: COLORS.shadowPrimary,
+    shadowOpacity: 0.5,
+    elevation: 10,
     borderWidth: 1,
-    borderColor: COLORS.borderColor,
+    borderColor: COLORS.borderGlow,
   },
   cardSplit: {
     flexDirection: 'row',
@@ -51,8 +51,8 @@ export const commonStyles = StyleSheet.create({
 
   // General
   text: {
-    fontSize: 15,
-    lineHeight: 22,
+    fontSize: 16,
+    lineHeight: 24,
     color: COLORS.textColor,
   },
   bold: {
@@ -60,7 +60,7 @@ export const commonStyles = StyleSheet.create({
   },
   field: {
     color: COLORS.textSecondary,
-    fontSize: 13,
+    fontSize: 14,
   },
   mb4: {
     marginBottom: 4,
@@ -69,28 +69,30 @@ export const commonStyles = StyleSheet.create({
     marginTop: 8,
   },
   sectionTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
-    lineHeight: 24,
+    lineHeight: 28,
     color: COLORS.textColor,
-    marginBottom: 20,
+    marginBottom: 24,
+    letterSpacing: -0.5,
   },
   // Modal styles
   body: {
-    paddingBottom: 24,
+    paddingBottom: 32,
   },
   selectionContainer: {
-    borderRadius: 12,
-    paddingVertical: 12,
-    paddingHorizontal: 16,
+    borderRadius: 16,
+    paddingVertical: 14,
+    paddingHorizontal: 20,
     backgroundColor: COLORS.secondary,
     borderWidth: 1,
-    borderColor: COLORS.borderColor,
+    borderColor: COLORS.borderGlow,
   },
   modalTitle: {
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: 'bold',
     textAlign: 'center',
     color: COLORS.textColor,
+    letterSpacing: -0.5,
   },
 });

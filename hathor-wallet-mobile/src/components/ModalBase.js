@@ -88,30 +88,31 @@ ModalBase.DiscreteButton = DiscreteButton;
 
 const styles = StyleSheet.create({
   wrapper: {
-    borderRadius: 20,
-    paddingVertical: 28,
-    paddingHorizontal: 20,
+    borderRadius: 24,
+    paddingVertical: 32,
+    paddingHorizontal: 24,
     backgroundColor: COLORS.card,
-    // Modern shadow
-    shadowColor: COLORS.shadowDark,
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.5,
-    shadowRadius: 16,
-    elevation: 10,
+    // DRAMATIC shadow with purple glow
+    shadowColor: COLORS.shadowPrimary,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.7,
+    shadowRadius: 24,
+    elevation: 16,
     borderWidth: 1,
-    borderColor: COLORS.borderColor,
+    borderColor: COLORS.borderGlow,
   },
   titleWrapper: {
-    paddingBottom: 20,
+    paddingBottom: 24,
   },
   title: {
     color: COLORS.textColor,
-    fontSize: 20,
-    lineHeight: 26,
+    fontSize: 24,
+    lineHeight: 32,
     fontWeight: 'bold',
+    letterSpacing: -0.5,
   },
   discreteButton: {
-    marginTop: 8,
+    marginTop: 12,
   },
 });
 
