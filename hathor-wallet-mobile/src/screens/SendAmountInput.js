@@ -129,7 +129,7 @@ const SendAmountInput = () => {
   const tokenNameUpperCase = token.name.toUpperCase();
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <Pressable style={{ flex: 1 }} onPress={() => Keyboard.dismiss()}>
         <HathorHeader
           withBorder
@@ -140,7 +140,7 @@ const SendAmountInput = () => {
           <View style={{ flex: 1, padding: 16, justifyContent: 'space-between' }}>
             <View>
               <View style={{
-                flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 40,
+                flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 64,
               }}
               >
                 {renderGhostElement()}
@@ -159,7 +159,7 @@ const SendAmountInput = () => {
                   ? <TokenBox onPress={onTokenBoxPress} label={token.symbol} />
                   : renderGhostElement()}
               </View>
-              <InputLabel style={{ textAlign: 'center', marginTop: 8 }}>
+              <InputLabel style={{ textAlign: 'center', marginTop: 16, fontSize: 16 }}>
                 {getAvailableString()}
               </InputLabel>
               <Text style={styles.error}>{error}</Text>
@@ -179,10 +179,11 @@ const SendAmountInput = () => {
 
 const styles = StyleSheet.create({
   error: {
-    marginTop: 12,
-    fontSize: 12,
+    marginTop: 20,
+    fontSize: 14,
+    fontWeight: 'bold',
     textAlign: 'center',
-    color: COLORS.errorTextColor,
+    color: COLORS.error,
   },
 });
 

@@ -210,14 +210,26 @@ const TokensHeader = ({ isNanoEnabled }) => {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
+    backgroundColor: COLORS.backgroundColor,
   },
   headerWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: COLORS.lowContrastDetail,
-    paddingHorizontal: 16,
-    height: 48,
-    paddingTop: 8,
+    backgroundColor: COLORS.card,
+    paddingHorizontal: 20,
+    height: 64,
+    paddingTop: 12,
+    marginHorizontal: 16,
+    marginTop: 16,
+    marginBottom: 8,
+    borderRadius: 16,
+    shadowColor: COLORS.shadowPrimary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 6,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
   },
   toggleContainer: {
     flex: 1,
@@ -227,10 +239,11 @@ const styles = StyleSheet.create({
     paddingLeft: 8,
   },
   headerTitle: {
-    fontSize: 20,
-    lineHeight: 24,
+    fontSize: 28,
+    lineHeight: 32,
     fontWeight: 'bold',
     color: COLORS.textColor,
+    letterSpacing: -1,
   },
 });
 

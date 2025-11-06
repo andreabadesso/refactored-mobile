@@ -61,38 +61,49 @@ export class Settings extends React.Component {
     scrollView: {
       flexGrow: 1,
       alignItems: 'center',
+      paddingBottom: 32,
     },
     networkContainerView: {
-      marginTop: 24,
-      marginBottom: 24,
+      marginTop: 32,
+      marginBottom: 32,
+      alignItems: 'center',
     },
     networkView: {
-      backgroundColor: COLORS.primaryOpacity10,
+      backgroundColor: COLORS.primaryOpacity20,
       margin: 8,
-      padding: 8,
-      borderRadius: 8,
+      paddingHorizontal: 24,
+      paddingVertical: 12,
+      borderRadius: 12,
       alignItems: 'center',
+      borderWidth: 1.5,
+      borderColor: COLORS.borderNeon,
+      shadowColor: COLORS.shadowPrimary,
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.4,
+      shadowRadius: 12,
+      elevation: 6,
     },
     networkText: {
       color: COLORS.primary,
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: 'bold',
+      letterSpacing: 0.5,
     },
     logoView: {
-      height: 22,
-      width: 100,
-      marginTop: 16,
-      marginBottom: 16,
+      height: 32,
+      width: 140,
+      marginTop: 32,
+      marginBottom: 24,
     },
     logo: {
-      height: 22,
-      width: 100,
+      height: 32,
+      width: 140,
     },
   });
 
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: COLORS.lowContrastDetail }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <ScrollView contentContainerStyle={this.style.scrollView}>
           <View style={this.style.logoView}>
             <Logo
