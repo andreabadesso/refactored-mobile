@@ -70,31 +70,31 @@ const SimpleInput = (props) => {
 
 const styles = StyleSheet.create({
   inputContainer: {
-    borderBottomWidth: 1,
-    borderColor: COLORS.borderColor,
-    paddingBottom: 8,
+    borderBottomWidth: 2,
+    borderColor: COLORS.borderGlow,
+    paddingBottom: 12,
   },
   input: {
-    lineHeight: 16,
+    lineHeight: 20,
     padding: 0,
-    fontSize: 14,
+    fontSize: 16,
     color: COLORS.textColor,
   },
   text: {
     color: COLORS.textColor,
-    fontSize: 14,
+    fontSize: 16,
   },
   label: {
     marginBottom: 12,
   },
   auxiliarText: {
-    marginTop: 8,
-    fontSize: 12,
-    color: COLORS.textColorShadow,
+    marginTop: 10,
+    fontSize: 13,
+    color: COLORS.textSecondary,
   },
   error: {
-    // TODO Maybe also change underline color to red?
-    color: COLORS.errorTextColor,
+    color: COLORS.error,
+    fontWeight: '500',
   },
 });
 

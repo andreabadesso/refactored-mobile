@@ -85,39 +85,59 @@ NewHathorButton.propTypes = {
 
 const style = StyleSheet.create({
   wrapper: {
-    height: 48,
-    borderRadius: 8,
+    height: 52,
+    borderRadius: 12,
     backgroundColor: COLORS.primary,
     alignSelf: 'stretch',
-    paddingHorizontal: 16,
+    paddingHorizontal: 20,
     justifyContent: 'center',
     alignItems: 'center',
+    // Modern shadow with purple glow
+    shadowColor: COLORS.shadowPrimary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 8,
   },
   wrapperDisabled: {
     backgroundColor: COLORS.muted,
+    shadowOpacity: 0,
+    elevation: 0,
+    opacity: 0.5,
   },
   wrapperSecondary: {
-    backgroundColor: COLORS.card,
-    borderColor: COLORS.borderColor,
-    borderWidth: 1.5,
+    backgroundColor: 'transparent',
+    borderColor: COLORS.borderGlow,
+    borderWidth: 2,
+    shadowColor: COLORS.shadowDark,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 2,
   },
   wrapperSecondaryDisabled: {
     borderColor: COLORS.muted,
+    opacity: 0.4,
   },
   wrapperDiscrete: {
     backgroundColor: 'transparent',
     borderColor: 'transparent',
-    borderWidth: 1.5,
+    borderWidth: 0,
+    shadowOpacity: 0,
+    elevation: 0,
   },
   wrapperSecondaryDanger: {
-    borderColor: COLORS.errorBgColor,
+    borderColor: COLORS.error,
+    backgroundColor: COLORS.errorBg,
+    shadowColor: COLORS.error,
   },
   text: {
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 15,
     textTransform: 'uppercase',
     color: COLORS.white,
     textAlign: 'center',
+    letterSpacing: 0.5,
   },
   textSecondary: {
     color: COLORS.textColor,
@@ -129,10 +149,12 @@ const style = StyleSheet.create({
     color: COLORS.mutedForeground,
   },
   textDiscrete: {
-    color: COLORS.textColor,
+    color: COLORS.primary,
+    fontWeight: '600',
   },
   textSecondaryDanger: {
-    color: COLORS.errorTextColor,
+    color: COLORS.error,
+    fontWeight: 'bold',
   },
 });
 

@@ -4,17 +4,17 @@ import { COLORS } from '../../styles/themes';
 export const commonStyles = StyleSheet.create({
   // Card
   card: {
-    paddingVertical: 16,
-    paddingHorizontal: 16,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
     backgroundColor: COLORS.card,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
-    borderBottomLeftRadius: 16,
-    borderBottomRightRadius: 16,
-    shadowOffset: { height: 2, width: 0 },
-    shadowRadius: 4,
-    shadowColor: COLORS.black,
-    shadowOpacity: 0.3,
+    borderRadius: 16,
+    shadowOffset: { height: 4, width: 0 },
+    shadowRadius: 12,
+    shadowColor: COLORS.shadowDark,
+    shadowOpacity: 0.4,
+    elevation: 6,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
   },
   cardSplit: {
     flexDirection: 'row',
@@ -51,15 +51,16 @@ export const commonStyles = StyleSheet.create({
 
   // General
   text: {
-    fontSize: 14,
-    lineHeight: 20,
+    fontSize: 15,
+    lineHeight: 22,
     color: COLORS.textColor,
   },
   bold: {
     fontWeight: 'bold',
   },
   field: {
-    color: COLORS.muted,
+    color: COLORS.textSecondary,
+    fontSize: 13,
   },
   mb4: {
     marginBottom: 4,
@@ -68,24 +69,26 @@ export const commonStyles = StyleSheet.create({
     marginTop: 8,
   },
   sectionTitle: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
-    lineHeight: 20,
+    lineHeight: 24,
     color: COLORS.textColor,
-    marginBottom: 24,
+    marginBottom: 20,
   },
   // Modal styles
   body: {
     paddingBottom: 24,
   },
   selectionContainer: {
-    borderRadius: 8,
-    paddingVertical: 8,
+    borderRadius: 12,
+    paddingVertical: 12,
     paddingHorizontal: 16,
     backgroundColor: COLORS.secondary,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
   },
   modalTitle: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: 'bold',
     textAlign: 'center',
     color: COLORS.textColor,

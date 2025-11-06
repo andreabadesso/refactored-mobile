@@ -10,127 +10,142 @@ import { _PRIMARY_COLOR as PRIMARY_COLOR } from '../config';
 import { HslColor } from '../HslColor';
 
 /**
- * Dark theme color scheme - Matching web-wallet design
- * Design tokens from web-wallet Tailwind config
+ * Modern Premium Dark Theme - Completely Refactored
+ * Inspired by modern fintech apps with glassmorphism and vibrant gradients
  */
 export const COLORS = {
+  // Base colors
   white: '#FFFFFF',
   black: '#000000',
-  /**
-   * @type {string} The main background color - Dark theme
-   */
-  backgroundColor: '#0D1117',
-  /**
-   * @type {string} Low contrast with background, like separator lines
-   */
-  lowContrastDetail: '#21262D',
-  /**
-   * @type {string} Medium contrast with background, like placeholders
-   */
-  midContrastDetail: '#57606A',
-  darkContrastDetail: '#E8EAED',
-  /**
-   * @type {string} Defines borders
-   */
-  borderColor: '#24292F',
-  borderColorMid: '#21262D',
-  borderColorDark: '#191C21',
-  /**
-   * @type {string}
-   * Maximum contrast with the background color, for better reading
-   */
-  textColor: '#FFFFFF',
-  /**
-   * @type {string} Washed down version of the text
-   */
-  textColorShadow: 'rgba(255, 255, 255, 0.5)',
-  textColorShadowOpacity005: 'rgba(255, 255, 255, 0.05)',
-  textColorShadowLighter: 'rgba(255, 255, 255, 0.1)',
-  /**
-   * @type {string} More washed down version of the text
-   */
-  textColorShadowLight: 'rgba(255, 255, 255, 0.3)',
-  textColorShadowOpacity06: 'rgba(255, 255, 255, 0.6)',
-  textColorShadowOpacity07: 'rgba(255, 255, 255, 0.7)',
-  textColorShadowDark: 'rgba(255, 255, 255, 0.8)',
-  textColorShadowOpacity09: 'rgba(255, 255, 255, 0.9)',
-  /**
-   * @type {string} Specific for tab bar selectors
-   */
-  tabBarBackground: '#24292F',
-  /**
-   * @type {string} Card background color
-   */
-  card: '#24292F',
-  cardForeground: '#FFFFFF',
-  /**
-   * @type {string} Secondary background (darker than main)
-   */
-  secondary: '#191C21',
-  secondaryForeground: '#FFFFFF',
-  /**
-   * @type {string} Muted text and elements
-   */
-  muted: '#57606A',
-  mutedForeground: '#E8EAED',
-  /**
-   * @type {string} Accent color from web-wallet
-   */
-  accent: '#71A3DA',
-  accentForeground: '#FFFFFF',
-  /**
-   * @type {string} Neutral colors
-   */
-  neutral100: '#FFFFFF',
-  neutral500: '#57606A',
-  neutral700: '#21262D',
-  /**
-   * @type {string} Represents a positive feedback for the user
-   */
-  positiveBalanceColor: '#71A3DA',
-  /**
-   * @type {string} For containers with error feedbacks
-   */
-  errorBgColor: '#DE3535',
-  /**
-   * @type {string} For texts with error messages
-   */
-  errorTextColor: '#FF6B6B',
-  /**
-   * @type {string} Washed down version of error texts
-   * */
-  errorTextShadow: `rgba(255, 107, 107, 0.7)`,
-  /**
-   * @type {string} Primary color, as set on the application config file
-   * Matching web-wallet purple
-   * */
-  primary: PRIMARY_COLOR,
-  primary400: '#BA90FF',
-  primary500: PRIMARY_COLOR,
-  primary600: '#542A99',
+
+  // === BACKGROUNDS ===
+  // Deep gradient background for modern feel
+  backgroundColor: '#0A0E1A',
+  backgroundGradientStart: '#0A0E1A',
+  backgroundGradientEnd: '#0F1419',
+
+  // === CARDS & SURFACES ===
+  // Glassmorphic elevated surfaces
+  card: '#1A1F2E',
+  cardGlass: 'rgba(26, 31, 46, 0.6)', // For glassmorphism effect
+  cardElevated: '#1F2937',
+  cardHover: '#252D3D',
+
+  // === PRIMARY COLORS (Vibrant Purple) ===
+  primary: '#8B5CF6', // Vibrant purple
+  primaryLight: '#A855F7', // Lighter purple for gradients
+  primaryDark: '#7C3AED',
+  primary400: '#A78BFA',
+  primary500: '#8B5CF6',
+  primary600: '#7C3AED',
   primaryForeground: '#FFFFFF',
-  /**
-   * @type {string} Primary color washed down to 10% opacity
-   */
-  primaryOpacity10: `${PRIMARY_COLOR}1A`,
-  /**
-   * @type {string} Primary color washed down to 30% opacity
-   */
-  primaryOpacity30: `${PRIMARY_COLOR}4D`,
-  feedbackSuccess100: 'hsla(161, 30%, 25%, 1)',
-  feedbackSuccess400: 'hsla(159, 75%, 47%, 1)',
-  feedbackWarning100: 'hsla(21, 100%, 20%, 1)',
-  feedbackWarning300: 'hsla(21, 54%, 59%, 1)',
-  feedbackError200: 'hsla(7, 69%, 25%, 1)',
-  feedbackError600: 'hsla(7, 100%, 60%, 1)',
-  freeze100: 'hsla(0, 0%, 30%, 1)',
-  freeze300: 'hsla(0, 0%, 65%, 1)',
-  cardWarning100: 'hsla(46, 100%, 25%, 1)',
-  cardWarning200: 'hsla(46, 100%, 68%, 1)',
-  /**
-   * @type {string} Light gray for labels in dark theme
-   */
-  textLabel: 'hsla(0, 0%, 72%, 1)',
+  primaryGlow: 'rgba(139, 92, 246, 0.4)', // Glow effect
+  primaryOpacity10: 'rgba(139, 92, 246, 0.1)',
+  primaryOpacity30: 'rgba(139, 92, 246, 0.3)',
+
+  // === ACCENT COLORS ===
+  accent: '#06B6D4', // Bright cyan
+  accentLight: '#22D3EE',
+  accentDark: '#0891B2',
+  accentForeground: '#FFFFFF',
+  accentGlow: 'rgba(6, 182, 212, 0.4)',
+
+  // === TEXT COLORS ===
+  textColor: '#FFFFFF',
+  textSecondary: '#94A3B8', // Slate for secondary text
+  textMuted: '#64748B', // Darker slate for muted text
+  textLabel: '#94A3B8',
+
+  // Text shadows with better opacity
+  textColorShadow: 'rgba(255, 255, 255, 0.6)',
+  textColorShadowOpacity005: 'rgba(255, 255, 255, 0.05)',
+  textColorShadowLighter: 'rgba(255, 255, 255, 0.15)',
+  textColorShadowLight: 'rgba(255, 255, 255, 0.4)',
+  textColorShadowOpacity06: 'rgba(255, 255, 255, 0.65)',
+  textColorShadowOpacity07: 'rgba(255, 255, 255, 0.75)',
+  textColorShadowDark: 'rgba(255, 255, 255, 0.85)',
+  textColorShadowOpacity09: 'rgba(255, 255, 255, 0.95)',
+
+  // === BORDERS ===
+  borderColor: 'rgba(255, 255, 255, 0.1)',
+  borderColorMid: 'rgba(255, 255, 255, 0.08)',
+  borderColorDark: 'rgba(255, 255, 255, 0.05)',
+  borderGlow: 'rgba(139, 92, 246, 0.3)', // Purple glow for borders
+
+  // === SEMANTIC COLORS ===
+  // Success (Vibrant Emerald)
+  success: '#10B981',
+  successLight: '#34D399',
+  successDark: '#059669',
+  successBg: 'rgba(16, 185, 129, 0.15)',
+  feedbackSuccess100: 'rgba(16, 185, 129, 0.15)',
+  feedbackSuccess400: '#10B981',
+
+  // Warning (Bright Amber)
+  warning: '#F59E0B',
+  warningLight: '#FCD34D',
+  warningDark: '#D97706',
+  warningBg: 'rgba(245, 158, 11, 0.15)',
+  feedbackWarning100: 'rgba(245, 158, 11, 0.15)',
+  feedbackWarning300: '#F59E0B',
+
+  // Error (Modern Rose)
+  error: '#F43F5E',
+  errorLight: '#FB7185',
+  errorDark: '#E11D48',
+  errorBg: 'rgba(244, 63, 94, 0.15)',
+  errorBgColor: '#F43F5E',
+  errorTextColor: '#FCA5A5',
+  errorTextShadow: 'rgba(252, 165, 165, 0.7)',
+  feedbackError200: 'rgba(244, 63, 94, 0.15)',
+  feedbackError600: '#F43F5E',
+
+  // Info/Balance (Cyan)
+  positiveBalanceColor: '#06B6D4',
+
+  // Freeze states
+  freeze100: 'rgba(100, 116, 139, 0.2)',
+  freeze300: '#64748B',
+
+  // Card warnings
+  cardWarning100: 'rgba(245, 158, 11, 0.15)',
+  cardWarning200: '#FBBF24',
+
+  // === COMPONENT SPECIFIC ===
+  tabBarBackground: '#1A1F2E',
+  cardForeground: '#FFFFFF',
+  secondary: '#1F2937',
+  secondaryForeground: '#FFFFFF',
+
+  // Muted variations
+  muted: '#64748B',
+  mutedForeground: '#CBD5E1',
+  lowContrastDetail: '#1F2937',
+  midContrastDetail: '#64748B',
+  darkContrastDetail: '#CBD5E1',
+
+  // Neutral scale
+  neutral100: '#FFFFFF',
+  neutral200: '#E2E8F0',
+  neutral300: '#CBD5E1',
+  neutral400: '#94A3B8',
+  neutral500: '#64748B',
+  neutral600: '#475569',
+  neutral700: '#334155',
+  neutral800: '#1E293B',
+  neutral900: '#0F172A',
+
+  // === SPECIAL EFFECTS ===
+  // Gradient overlays
+  gradientPurple: ['#8B5CF6', '#A855F7'],
+  gradientCyan: ['#06B6D4', '#22D3EE'],
+  gradientSuccess: ['#10B981', '#34D399'],
+  gradientError: ['#F43F5E', '#FB7185'],
+
+  // Shadow colors
+  shadowPrimary: 'rgba(139, 92, 246, 0.3)',
+  shadowAccent: 'rgba(6, 182, 212, 0.3)',
+  shadowDark: 'rgba(0, 0, 0, 0.5)',
 };
 
 /**

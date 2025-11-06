@@ -8,6 +8,7 @@
 import React from 'react';
 import { Animated, Easing } from 'react-native';
 import PropTypes from 'prop-types';
+import { COLORS } from '../styles/themes';
 
 import loadingIcon from '../assets/images/icLoadingBig.png';
 
@@ -42,7 +43,8 @@ class Spinner extends React.Component {
           this.props.style, {
             height: this.props.size,
             width: this.props.size,
-            transform: [{ rotate: spin }]
+            transform: [{ rotate: spin }],
+            tintColor: this.props.color || COLORS.primary,
           }]}
         source={loadingIcon}
       />
@@ -53,6 +55,8 @@ class Spinner extends React.Component {
 Spinner.propTypes = {
   // Optional (default 105). Size of the spinner. Used for width and height
   size: PropTypes.number,
+  // Optional. Color of the spinner (defaults to primary color)
+  color: PropTypes.string,
   /* eslint react/forbid-prop-types: 0 */
   style: PropTypes.object,
 };
