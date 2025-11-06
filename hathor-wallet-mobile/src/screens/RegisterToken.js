@@ -31,7 +31,7 @@ class RegisterToken extends React.Component {
 
     return (
       <View style={{
-        flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.lowContrastDetail, alignSelf: 'stretch',
+        flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: COLORS.backgroundColor, alignSelf: 'stretch',
       }}
       >
         <View style={{

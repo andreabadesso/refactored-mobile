@@ -175,7 +175,7 @@ const BackupWords = ({ navigation, route }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <HathorHeader
         onBackPress={() => navigation.goBack()}
       />

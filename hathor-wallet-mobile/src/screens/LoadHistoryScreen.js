@@ -69,7 +69,7 @@ export default function LoadHistoryScreen() {
   );
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.backgroundColor }}>
       {loadHistoryStatus.error ? renderError() : renderLoading()}
     </View>
   );

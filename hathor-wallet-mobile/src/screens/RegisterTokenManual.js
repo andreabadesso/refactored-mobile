@@ -20,6 +20,7 @@ import SimpleInput from '../components/SimpleInput';
 import Spinner from '../components/Spinner';
 
 import { getKeyboardAvoidingViewTopDistance, Strong } from '../utils';
+import { COLORS } from '../styles/themes';
 
 import { newToken, updateSelectedToken, fetchTokensMetadata, tokenMetadataUpdated } from '../actions';
 import NavigationService from '../NavigationService';
@@ -119,7 +120,7 @@ class RegisterTokenManual extends React.Component {
     );
 
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <KeyboardAvoidingView behavior='padding' style={{ flex: 1 }} keyboardVerticalOffset={getKeyboardAvoidingViewTopDistance()}>
           <HathorHeader
             withBorder

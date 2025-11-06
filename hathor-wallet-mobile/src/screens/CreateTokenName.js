@@ -16,6 +16,7 @@ import OfflineBar from '../components/OfflineBar';
 import SimpleInput from '../components/SimpleInput';
 import TextFmt from '../components/TextFmt';
 import { getKeyboardAvoidingViewTopDistance, Italic } from '../utils';
+import { COLORS } from '../styles/themes';
 
 class CreateTokenName extends React.Component {
   /**
@@ -38,7 +39,7 @@ class CreateTokenName extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`CREATE TOKEN`}
           onBackPress={() => this.props.navigation.pop()}

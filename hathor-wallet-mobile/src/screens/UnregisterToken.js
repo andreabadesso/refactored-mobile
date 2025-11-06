@@ -103,7 +103,7 @@ class UnregisterToken extends React.Component {
   render() {
     const tokenLabel = getTokenLabel(this.props.selectedToken);
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`UNREGISTER TOKEN`}
           onBackPress={() => this.props.navigation.goBack()}

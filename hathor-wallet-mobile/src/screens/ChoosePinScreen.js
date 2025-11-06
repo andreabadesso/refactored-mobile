@@ -173,7 +173,7 @@ class ChoosePinScreen extends React.Component {
   render() {
     const step = this.steps[this.state.stepIndex];
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           withLogo
           onBackPress={() => this.props.navigation.goBack()}

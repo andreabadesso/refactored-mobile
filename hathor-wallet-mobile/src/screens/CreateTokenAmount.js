@@ -144,7 +144,7 @@ const CreateTokenAmount = () => {
   );
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <Pressable style={{ flex: 1 }} onPress={() => Keyboard.dismiss()}>
         <HathorHeader
           title={t`CREATE TOKEN`}

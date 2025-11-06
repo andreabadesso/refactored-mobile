@@ -23,6 +23,7 @@ import TextFmt from '../components/TextFmt';
 import baseStyle from '../styles/init';
 import { PRIMARY_COLOR } from '../constants';
 import { dropResetOnLockScreen, resetWallet } from '../actions';
+import { COLORS } from '../styles/themes';
 
 /**
  * isScreenLocked {bool} check if is in lock screen state
@@ -99,7 +100,7 @@ class ResetWallet extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`RESET WALLET`}
           onBackPress={this.hideBackButton ? null : () => this.onBackPress()}

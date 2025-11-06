@@ -43,7 +43,7 @@ class TokenDetail extends React.Component {
     const isNFT = isTokenNFT(get(this.props, 'selectedToken.uid'), this.props.tokenMetadata);
 
     return (
-      <View style={{ flex: 1, backgroundColor: COLORS.lowContrastDetail }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`TOKEN DETAILS`}
           onBackPress={() => this.props.navigation.goBack()}

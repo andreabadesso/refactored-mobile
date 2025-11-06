@@ -159,7 +159,7 @@ export class Security extends React.Component {
     const safeBiometryActive = this.state.biometryEnabled && useSafeBiometryFeature;
 
     return (
-      <View style={{ flex: 1, backgroundColor: COLORS.lowContrastDetail }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`SECURITY`}
           onBackPress={() => this.props.navigation.goBack()}

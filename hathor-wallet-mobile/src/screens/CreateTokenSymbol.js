@@ -15,6 +15,7 @@ import NewHathorButton from '../components/NewHathorButton';
 import OfflineBar from '../components/OfflineBar';
 import SimpleInput from '../components/SimpleInput';
 import { getKeyboardAvoidingViewTopDistance, Italic } from '../utils';
+import { COLORS } from '../styles/themes';
 
 /**
  * This screen expect the following parameters on the navigation:
@@ -57,7 +58,7 @@ class CreateTokenSymbol extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           title={t`CREATE TOKEN`}
           onBackPress={() => this.props.navigation.goBack()}

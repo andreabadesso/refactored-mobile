@@ -17,6 +17,7 @@ import SimpleInput from '../components/SimpleInput';
 import HathorHeader from '../components/HathorHeader';
 import { getKeyboardAvoidingViewTopDistance, validateAddress } from '../utils';
 import OfflineBar from '../components/OfflineBar';
+import { COLORS } from '../styles/themes';
 
 export const SendAddressInput = () => {
   const route = useRoute();
@@ -47,7 +48,7 @@ export const SendAddressInput = () => {
   }
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <HathorHeader
         withBorder
         title={t`SEND`}

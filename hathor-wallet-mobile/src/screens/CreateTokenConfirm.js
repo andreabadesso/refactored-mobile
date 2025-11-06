@@ -149,7 +149,7 @@ const CreateTokenConfirm = () => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <HathorHeader
         title={t`CREATE TOKEN`}
         onBackPress={() => navigation.goBack()}

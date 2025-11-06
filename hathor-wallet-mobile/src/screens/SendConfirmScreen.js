@@ -123,7 +123,7 @@ const SendConfirmScreen = () => {
   const tokenNameUpperCase = token.name.toUpperCase();
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
       <HathorHeader
         withBorder
         title={t`SEND ${tokenNameUpperCase}`}

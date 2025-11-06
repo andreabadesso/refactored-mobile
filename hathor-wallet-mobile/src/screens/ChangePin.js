@@ -230,7 +230,7 @@ class ChangePin extends React.Component {
 
     const step = this.steps[this.state.stepIndex];
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, backgroundColor: COLORS.backgroundColor }}>
         <HathorHeader
           withBorder
           title={t`CHANGE PIN`}
