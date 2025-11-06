@@ -110,7 +110,7 @@ const TokenSelect = (props) => {
 };
 
 const ItemSeparator = () => (
-  <View style={{ width: '100%', height: 1, backgroundColor: COLORS.borderColor }} />
+  <View style={{ height: 12 }} />
 );
 
 const styles = StyleSheet.create({
@@ -118,14 +118,26 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: COLORS.lowContrastDetail, // Defines an outer area on the main list content
+    backgroundColor: COLORS.backgroundColor,
+    paddingTop: 8,
   },
   itemWrapper: {
-    height: 80,
-    paddingHorizontal: 16,
+    minHeight: 96,
+    marginHorizontal: 16,
+    paddingHorizontal: 20,
+    paddingVertical: 20,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    backgroundColor: COLORS.card,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: COLORS.borderColor,
+    shadowColor: COLORS.shadowDark,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 6,
   },
   itemLeftWrapper: {
     flexDirection: 'row',
@@ -133,31 +145,45 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   symbolWrapper: {
-    padding: 4,
-    backgroundColor: COLORS.lowContrastDetail,
+    width: 52,
+    height: 52,
+    backgroundColor: COLORS.primaryOpacity20,
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 8,
-    borderRadius: 4,
+    marginRight: 16,
+    borderRadius: 16,
+    borderWidth: 1.5,
+    borderColor: COLORS.borderColor,
   },
   text: {
-    lineHeight: 20,
+    lineHeight: 22,
     color: COLORS.textColor,
   },
   rightText: {
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
+    letterSpacing: -0.5,
   },
   leftText: {
-    fontSize: 14,
+    fontSize: 16,
+    fontWeight: '600',
   },
   symbolText: {
     fontWeight: 'bold',
+    fontSize: 18,
+    color: COLORS.primary,
   },
   symbolTextSelected: {
-    color: COLORS.backgroundColor,
+    color: COLORS.white,
   },
   symbolWrapperSelected: {
     backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
+    shadowColor: COLORS.shadowPrimaryStrong,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.6,
+    shadowRadius: 12,
+    elevation: 8,
   },
 });
 

@@ -123,16 +123,17 @@ class MainScreen extends React.Component {
   render() {
     const renderEmptyHistory = () => (
       <HathorList infinity>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Strong>{t`No transactions`}</Strong>
-          <Text style={{ marginTop: 8, lineHeight: 20, textAlign: 'center', width: 220 }}>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <Text style={{ fontSize: 48, marginBottom: 16 }}>💸</Text>
+          <Strong style={{ fontSize: 20, marginBottom: 12, color: COLORS.textColor }}>{t`No transactions`}</Strong>
+          <Text style={{ marginTop: 8, lineHeight: 24, textAlign: 'center', width: 280, fontSize: 15, color: COLORS.textSecondary }}>
             {str2jsx(
               t`|share:Share your address| with friends and start exchanging tokens`,
               { share: (x, i) => (
                 <Text
                   key={i}
                   onPress={() => this.props.navigation.navigate('Receive')}
-                  style={{ color: COLORS.primary, fontWeight: 'bold' }}
+                  style={{ color: COLORS.primary, fontWeight: 'bold', fontSize: 15 }}
                 >{x}</Text>
               ) }
             )}
@@ -143,18 +144,20 @@ class MainScreen extends React.Component {
 
     const renderLoadingHistory = () => (
       <HathorList infinity>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Strong>{t`Loading transactions`}</Strong>
-          <Spinner size={48} animating style={{ marginTop: 32 }} />
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <Spinner size={56} animating style={{ marginBottom: 24 }} color={COLORS.primary} />
+          <Strong style={{ fontSize: 18, color: COLORS.textColor }}>{t`Loading transactions`}</Strong>
+          <Text style={{ marginTop: 8, fontSize: 14, color: COLORS.textSecondary }}>{t`Please wait...`}</Text>
         </View>
       </HathorList>
     );
 
     const renderErrorHistory = () => (
       <HathorList infinity>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 64 }}>
-          <Strong style={{ textAlign: 'center' }}>{t`There was an error loading your transaction history`}</Strong>
-          <Text style={{ marginTop: 8, lineHeight: 20, textAlign: 'center', width: 220 }}>
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 40 }}>
+          <Text style={{ fontSize: 48, marginBottom: 16 }}>⚠️</Text>
+          <Strong style={{ textAlign: 'center', fontSize: 18, marginBottom: 12, color: COLORS.textColor }}>{t`There was an error loading your transaction history`}</Strong>
+          <Text style={{ marginTop: 8, lineHeight: 24, textAlign: 'center', width: 260, fontSize: 15, color: COLORS.textSecondary }}>
             {str2jsx(
               t`Please |tryAgain:try again|`,
               {
@@ -162,7 +165,7 @@ class MainScreen extends React.Component {
                   <Text
                     key={i}
                     onPress={() => this.retryTxHistory()}
-                    style={{ color: COLORS.primary, fontWeight: 'bold' }}
+                    style={{ color: COLORS.primary, fontWeight: 'bold', fontSize: 15 }}
                   > {x} </Text>
                 )
               }
@@ -303,39 +306,48 @@ class TxListItem extends React.Component {
   style = StyleSheet.create({
     view: {
       flexDirection: 'row',
-      alignItems: 'flex-start',
-      minHeight: 88,
-      paddingVertical: 20,
-      paddingHorizontal: 4,
+      alignItems: 'center',
+      minHeight: 92,
+      paddingVertical: 16,
+      paddingHorizontal: 20,
+      backgroundColor: COLORS.card,
+      borderRadius: 20,
+      borderWidth: 1,
+      borderColor: COLORS.borderColor,
+      shadowColor: COLORS.shadowDark,
+      shadowOffset: { width: 0, height: 3 },
+      shadowOpacity: 0.3,
+      shadowRadius: 8,
+      elevation: 4,
     },
     middleView: {
       flex: 1,
+      marginLeft: 4,
     },
     icon: {
-      marginLeft: 20,
-      marginRight: 20,
-      width: 28,
-      height: 28,
+      marginRight: 16,
+      width: 40,
+      height: 40,
     },
     iconDisabled: {
       opacity: 0.3,
     },
     balance: {
-      fontSize: 18,
-      marginRight: 20,
+      fontSize: 20,
       fontWeight: 'bold',
       color: COLORS.textColor,
-      letterSpacing: -0.5,
+      letterSpacing: -0.8,
     },
     description: {
       fontSize: 16,
       lineHeight: 22,
-      fontWeight: 'bold',
+      fontWeight: '600',
       color: COLORS.textColor,
+      marginBottom: 4,
     },
     secondaryText: {
       fontSize: 13,
-      lineHeight: 20,
+      lineHeight: 18,
       color: COLORS.textSecondary,
     },
     bold: {
@@ -462,14 +474,15 @@ class TxListItem extends React.Component {
     return (
       <TouchableHighlight
         onPress={() => this.onItemPress(item)}
-        underlayColor={COLORS.primaryOpacity30}
+        underlayColor={COLORS.primaryOpacity20}
+        style={{ borderRadius: 20, marginHorizontal: 16, marginVertical: 6 }}
       >
         <View style={style.view}>
           {image}
           <View style={style.middleView}>
             <Text style={style.description}>{description}</Text>
             <Text style={style.secondaryText}>{timestamp}</Text>
-            <Text style={[style.secondaryText, style.bold]}>{item.getVersionInfo()}</Text>
+            {item.getVersionInfo() && <Text style={[style.secondaryText, style.bold]}>{item.getVersionInfo()}</Text>}
           </View>
           <Text style={style.balance} numberOfLines={1}>{balanceStr}</Text>
         </View>
@@ -491,60 +504,65 @@ class BalanceView extends React.Component {
       alignItems: 'center',
     },
     view: {
-      paddingTop: 48,
+      paddingTop: 40,
       paddingLeft: 32,
       paddingRight: 32,
       paddingBottom: 40,
       marginHorizontal: 16,
-      marginTop: 16,
-      marginBottom: 24,
+      marginTop: 20,
+      marginBottom: 20,
       backgroundColor: COLORS.card,
-      borderRadius: 24,
-      shadowColor: COLORS.shadowPrimary,
-      shadowOffset: { width: 0, height: 8 },
-      shadowOpacity: 0.6,
-      shadowRadius: 24,
-      elevation: 12,
-      borderWidth: 1,
+      borderRadius: 28,
+      shadowColor: COLORS.shadowPrimaryStrong,
+      shadowOffset: { width: 0, height: 12 },
+      shadowOpacity: 0.5,
+      shadowRadius: 28,
+      elevation: 14,
+      borderWidth: 2,
       borderColor: COLORS.borderGlow,
     },
     balanceLocked: {
-      marginTop: 32,
-      fontSize: 24,
+      marginTop: 28,
+      fontSize: 28,
       fontWeight: 'bold',
       color: COLORS.textColor,
-      letterSpacing: -0.5,
+      letterSpacing: -1,
     },
     balanceAvailable: {
-      fontSize: 56,
+      fontSize: 64,
       fontWeight: 'bold',
       color: COLORS.textColor,
-      letterSpacing: -2,
+      letterSpacing: -3,
     },
     text1: {
-      paddingTop: 12,
-      fontSize: 13,
+      paddingTop: 8,
+      fontSize: 12,
       fontWeight: '700',
       color: COLORS.textSecondary,
       textTransform: 'uppercase',
-      letterSpacing: 1.2,
+      letterSpacing: 1.5,
     },
     expandButton: {
-      marginTop: 32,
+      marginTop: 24,
       marginBottom: 0,
     },
     networkView: {
-      backgroundColor: COLORS.primaryOpacity20,
-      paddingHorizontal: 20,
-      paddingVertical: 10,
-      marginTop: 32,
-      borderRadius: 12,
-      borderWidth: 1.5,
-      borderColor: COLORS.borderNeon,
+      backgroundColor: COLORS.primaryOpacity30,
+      paddingHorizontal: 24,
+      paddingVertical: 12,
+      marginTop: 28,
+      borderRadius: 16,
+      borderWidth: 2,
+      borderColor: COLORS.primary,
+      shadowColor: COLORS.shadowPrimary,
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.6,
+      shadowRadius: 12,
+      elevation: 6,
     },
     networkText: {
       color: COLORS.primary,
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: 'bold',
       letterSpacing: 0.5,
     },
